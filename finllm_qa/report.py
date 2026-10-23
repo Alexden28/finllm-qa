@@ -54,7 +54,7 @@ def benchmark_report(result: dict, out: Path) -> None:
     (out / "benchmark.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
     kinds = [k for k in KIND_ORDER if k in res["dev"]]
-    fig, ax = plt.subplots(figsize=(7.2, 4.2), dpi=160)
+    fig, ax = plt.subplots(figsize=(7.2, 4.6), dpi=160)
     y = range(len(kinds))
     for i, (style, name) in enumerate((("dev", "template style A"), ("heldout", "template style B"))):
         vals = [res[style][k]["flag_rate"] * 100 for k in kinds]
@@ -66,7 +66,8 @@ def benchmark_report(result: dict, out: Path) -> None:
     ax.set_title("Recall by injected error type (0 false alarms on 534 clean texts)", color=INK, fontsize=10,
                  loc="left")
     _style(ax)
-    ax.legend(frameon=False, fontsize=8, loc="lower right")
+    ax.tick_params(axis="y", colors=INK)
+    ax.legend(frameon=False, fontsize=8, loc="upper center", bbox_to_anchor=(0.4, -0.13), ncol=2)
     fig.tight_layout()
     fig.savefig(out / "benchmark_recall.png")
     plt.close(fig)
@@ -113,20 +114,21 @@ def llm_report(paths: list[Path], briefs: dict[str, Brief], checker: Checker, ou
                      f"{r['numbers_supported']:.1%} of {r['numbers']} |")
     (out / "llm_results.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
-    fig, ax = plt.subplots(figsize=(7.2, 0.6 + 0.55 * len(rows)), dpi=160)
-    names = [r["model"].split("/")[-1] for r in rows]
-    contra = [r["docs_with_contradiction"] * 100 for r in rows]
-    other = [(r["flagged_docs"] - r["docs_with_contradiction"]) * 100 for r in rows]
+    rows_plot = rows[::-1]  # barh draws bottom-up; best model on top
+    fig, ax = plt.subplots(figsize=(7.2, 1.3 + 0.55 * len(rows)), dpi=160)
+    names = [r["model"].split("/")[-1] for r in rows_plot]
+    contra = [r["docs_with_contradiction"] * 100 for r in rows_plot]
+    other = [(r["flagged_docs"] - r["docs_with_contradiction"]) * 100 for r in rows_plot]
     ax.barh(names, contra, color="#c23b3b", height=0.55, label="contradicts the data")
     ax.barh(names, other, left=contra, color="#e8a5a5", height=0.55, label="only unverifiable claims")
     for i, (c, o) in enumerate(zip(contra, other)):
-        ax.text(c + o + 1, i, f"{c:.0f}% / {c + o:.0f}%", va="center", fontsize=8, color=INK)
-    ax.set_xlim(0, 110)
+        ax.text(c + o + 1, i, f"{c:.0f}% contradicted", va="center", fontsize=8, color=INK)
+    ax.set_xlim(0, 118)
     ax.set_xlabel("Commentaries with at least one finding (%)", color=MUTED, fontsize=9)
     ax.set_title(f"Local LLMs writing from {rows[0]['docs']} real fact sheets", color=INK, fontsize=10, loc="left")
     _style(ax)
     ax.tick_params(axis="y", colors=INK)
-    ax.legend(frameon=False, fontsize=8, loc="lower right")
+    ax.legend(frameon=False, fontsize=8, loc="upper center", bbox_to_anchor=(0.45, -0.38), ncol=2)
     fig.tight_layout()
     fig.savefig(out / "llm_findings.png")
     plt.close(fig)

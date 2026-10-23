@@ -7,7 +7,7 @@
 | rose/fell flipped | 183 / 32 | 100.0% | 100.0% | 100.0% / 100.0% |
 | metric swapped | 105 / 122 | 97.1% | 82.8% | 97.1% / 82.8% |
 | period outside brief | 265 / 264 | 98.9% | 98.5% | 98.9% / 98.5% |
-| prior period's label | 251 / 248 | 90.4% | 75.8% | 90.4% / 75.8% |
+| prior period's label | 251 / 248 | 83.7% | 75.8% | 83.7% / 75.8% |
 | wrong company/economy | 120 / 79 | 100.0% | 100.0% | 100.0% / 100.0% |
 | invented claim | 267 / 267 | 100.0% | 100.0% | 100.0% / 100.0% |
 | none (clean text): false alarms | 267 / 267 | 0.0% | 0.0% | |

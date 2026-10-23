@@ -37,9 +37,9 @@
       },
       "period_swap": {
         "n": 251,
-        "flag_rate": 0.9043824701195219,
-        "located": 0.9043824701195219,
-        "typed": 0.9043824701195219
+        "flag_rate": 0.8366533864541833,
+        "located": 0.8366533864541833,
+        "typed": 0.8366533864541833
       },
       "scale": {
         "n": 79,
@@ -143,6 +143,14 @@
       ]
     },
     {
+      "id": "US-inflation-2023-02/dev/period_swap",
+      "text": "US consumer prices rose 5.96% in the year to January 2023, down from 6.33 percent in January. Core inflation was little changed at 5.50 percent.",
+      "changed": [
+        "February 2023",
+        "January 2023"
+      ]
+    },
+    {
       "id": "US-inflation-2023-02/heldout/period_swap",
       "text": "Price pressures faded in January 2023: the CPI rose 5.96% from a year earlier, against 6.33 percent a month before, and the core measure was 5.50%.",
       "changed": [
@@ -151,11 +159,27 @@
       ]
     },
     {
+      "id": "US-inflation-2023-03/dev/period_swap",
+      "text": "US consumer prices rose 4.92 percent in the year to February 2023, down from 5.96 percent in February. Core inflation rose to 5.57%.",
+      "changed": [
+        "March 2023",
+        "February 2023"
+      ]
+    },
+    {
       "id": "US-inflation-2023-03/heldout/period_swap",
       "text": "Price pressures faded in February 2023: the CPI rose 4.92% from a year earlier, against 5.96% a month before, and the core measure was 5.57 percent.",
       "changed": [
         "March 2023",
         "February 2023"
+      ]
+    },
+    {
+      "id": "US-inflation-2023-04/dev/period_swap",
+      "text": "US consumer prices rose 4.95% in the year to March 2023, compared with 4.92 percent in March. Core inflation slowed to 5.51 percent.",
+      "changed": [
+        "April 2023",
+        "March 2023"
       ]
     },
     {
@@ -215,6 +239,14 @@
       ]
     },
     {
+      "id": "US-inflation-2023-11/dev/period_swap",
+      "text": "US consumer prices rose 3.13% in the year to October 2023, down from 3.25% in October. Core inflation was little changed at 4.02%.",
+      "changed": [
+        "November 2023",
+        "October 2023"
+      ]
+    },
+    {
       "id": "US-inflation-2023-11/heldout/period_swap",
       "text": "October's CPI report showed headline inflation of 3.13 percent and core inflation of 4.02 percent, versus 3.25 percent and 4.03% in October.",
       "changed": [
@@ -255,6 +287,14 @@
       ]
     },
     {
+      "id": "US-inflation-2024-04/dev/period_swap",
+      "text": "US consumer prices rose 3.36 percent in the year to March 2024, down from 3.49 percent in March. Core inflation slowed to 3.63%.",
+      "changed": [
+        "April 2024",
+        "March 2024"
+      ]
+    },
+    {
       "id": "US-inflation-2024-04/heldout/period_swap",
       "text": "March's CPI report showed headline inflation of 3.36% and core inflation of 3.63%, versus 3.49% and 3.82% in March.",
       "changed": [
@@ -279,11 +319,27 @@
       ]
     },
     {
+      "id": "US-inflation-2024-07/dev/period_swap",
+      "text": "US consumer prices rose 2.94 percent in the year to June 2024, compared with 2.97% in June. Core inflation was little changed at 3.23 percent.",
+      "changed": [
+        "July 2024",
+        "June 2024"
+      ]
+    },
+    {
       "id": "US-inflation-2024-07/heldout/period_swap",
       "text": "June's CPI report showed headline inflation of 2.94 percent and core inflation of 3.23%, versus 2.97 percent and 3.27 percent in June.",
       "changed": [
         "July",
         "June"
+      ]
+    },
+    {
+      "id": "US-inflation-2024-08/dev/period_swap",
+      "text": "US consumer prices rose 2.61 percent in the year to July 2024, down from 2.94% in July. Core inflation rose to 3.29%.",
+      "changed": [
+        "August 2024",
+        "July 2024"
       ]
     },
     {
@@ -335,11 +391,27 @@
       ]
     },
     {
+      "id": "US-inflation-2025-02/dev/period_swap",
+      "text": "US consumer prices rose 2.80 percent in the year to January 2025, down from 2.99 percent in January. Core inflation slowed to 3.14%.",
+      "changed": [
+        "February 2025",
+        "January 2025"
+      ]
+    },
+    {
       "id": "US-inflation-2025-02/heldout/period_swap",
       "text": "January's CPI report showed headline inflation of 2.80% and core inflation of 3.14 percent, versus 2.99% and 3.28% in January.",
       "changed": [
         "February",
         "January"
+      ]
+    },
+    {
+      "id": "US-inflation-2025-03/dev/period_swap",
+      "text": "US consumer prices rose 2.38 percent in the year to February 2025, down from 2.80% in February. Core inflation eased to 2.81 percent.",
+      "changed": [
+        "March 2025",
+        "February 2025"
       ]
     },
     {
@@ -351,11 +423,27 @@
       ]
     },
     {
+      "id": "US-inflation-2025-04/dev/period_swap",
+      "text": "US consumer prices rose 2.33% in the year to March 2025, compared with 2.38% in March. Core inflation was little changed at 2.78%.",
+      "changed": [
+        "April 2025",
+        "March 2025"
+      ]
+    },
+    {
       "id": "US-inflation-2025-04/heldout/period_swap",
       "text": "Price pressures faded in March 2025: the CPI rose 2.33 percent from a year earlier, against 2.38% a month before, and the core measure was 2.78%.",
       "changed": [
         "April 2025",
         "March 2025"
+      ]
+    },
+    {
+      "id": "US-inflation-2025-05/dev/period_swap",
+      "text": "US consumer prices rose 2.38 percent in the year to April 2025, compared with 2.33% in April. Core inflation was little changed at 2.77 percent.",
+      "changed": [
+        "May 2025",
+        "April 2025"
       ]
     },
     {
@@ -391,6 +479,14 @@
       ]
     },
     {
+      "id": "US-inflation-2025-08/dev/period_swap",
+      "text": "US consumer prices rose 2.94% in the year to July 2025, up from 2.74 percent in July. Core inflation climbed to 3.11%.",
+      "changed": [
+        "August 2025",
+        "July 2025"
+      ]
+    },
+    {
       "id": "US-inflation-2025-08/heldout/period_swap",
       "text": "Price pressures built in July 2025: the CPI rose 2.94% from a year earlier, against 2.74% a month before, and the core measure was 3.11%.",
       "changed": [
@@ -412,6 +508,14 @@
       "changed": [
         "core inflation",
         "headline inflation"
+      ]
+    },
+    {
+      "id": "US-inflation-2025-12/dev/period_swap",
+      "text": "US consumer prices rose 2.65 percent in the year to November 2025, down from 2.70 percent in November. Core inflation was little changed at 2.65 percent.",
+      "changed": [
+        "December 2025",
+        "November 2025"
       ]
     },
     {
@@ -463,6 +567,14 @@
       ]
     },
     {
+      "id": "US-inflation-2026-04/dev/period_swap",
+      "text": "US consumer prices rose 3.78% in the year to March 2026, up from 3.29 percent in March. Core inflation climbed to 2.74%.",
+      "changed": [
+        "April 2026",
+        "March 2026"
+      ]
+    },
+    {
       "id": "US-inflation-2026-04/heldout/period",
       "text": "April's CPI report showed headline inflation of 3.78% and core inflation of 2.74%, versus 3.29% and 2.60 percent in May.",
       "changed": [
@@ -495,11 +607,27 @@
       ]
     },
     {
+      "id": "US-inflation-2026-07/dev/period_swap",
+      "text": "US consumer prices rose 3.30% in the year to June 2026, down from 3.46% in June. Core inflation eased to 2.47%.",
+      "changed": [
+        "July 2026",
+        "June 2026"
+      ]
+    },
+    {
       "id": "US-inflation-2026-07/heldout/period_swap",
       "text": "June's CPI report showed headline inflation of 3.30 percent and core inflation of 2.47 percent, versus 3.46 percent and 2.57% in June.",
       "changed": [
         "July",
         "June"
+      ]
+    },
+    {
+      "id": "US-inflation-2026-08/dev/period_swap",
+      "text": "US consumer prices rose 3.35% in the year to July 2026, up from 3.30 percent in July. Core inflation was little changed at 2.45%.",
+      "changed": [
+        "August 2026",
+        "July 2026"
       ]
     },
     {
@@ -516,6 +644,14 @@
       "changed": [
         "August",
         "July"
+      ]
+    },
+    {
+      "id": "US-inflation-2026-09/dev/period_swap",
+      "text": "US consumer prices rose 3.72% in the year to August 2026, up from 3.35% in August. Core inflation rose to 2.57%.",
+      "changed": [
+        "September 2026",
+        "August 2026"
       ]
     },
     {

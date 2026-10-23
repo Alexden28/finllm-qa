@@ -91,3 +91,21 @@ def test_from_to_period_binding(check):
 def test_bracketed_abbreviation_restates_the_metric(check):
     text = "The core consumer price index (CPI) inflation rate eased to 2.57% in September 2026 from 2.45%."
     assert errors(check(text, CPI)) == ["direction"]  # core rose 0.12 pp; "eased" is wrong, 2.57% is right
+
+
+LABOR = Brief("US-labor-2024-05", "labor", "US economy", "2024-05", "2024-04", {
+    "unemployment": (3.9, 3.9), "payrolls": (78_000, 64_000)})
+
+
+def test_audit_regressions(check):
+    # a period after a comma or "to" belongs to the next clause, not to this number
+    assert check("Payrolls rose by +78,000 jobs in May 2024, while the April change was +64,000 jobs.", LABOR).findings == []
+    # an adjective on something the brief does not cover is not a claim about the brief
+    assert check("Revenue reached $416.2 billion in fiscal 2025 despite increased costs.", APPLE).findings == []
+    # a percentage-point figure attached to job gains is borrowed from the unemployment rate
+    unemp = Brief("US-labor-2024-06", "labor", "US economy", "2024-06", "2024-05", {
+        "unemployment": (4.1, 3.9), "payrolls": (87_000, 78_000)})
+    text = "The nonfarm payroll change saw a gain of 87,000 jobs, representing a 0.20 percentage point increase."
+    assert "metric" in errors(check(text, unemp))
+    # "increased" when nothing moved
+    assert errors(check("Unemployment increased to 3.9% in May 2024.", LABOR)) == ["direction"]

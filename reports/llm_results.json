@@ -1,0 +1,58 @@
+[
+  {
+    "model": "Qwen/Qwen2.5-1.5B-Instruct",
+    "docs": 267,
+    "flagged_docs": 0.7116104868913857,
+    "docs_with_contradiction": 0.6404494382022472,
+    "numbers": 1061,
+    "numbers_supported": 0.8887841658812441,
+    "contradicted_findings": 262,
+    "unverifiable_findings": 38,
+    "contradicted_by_error": {
+      "direction": 148,
+      "arithmetic": 59,
+      "metric": 32,
+      "value": 17,
+      "rounding": 3,
+      "period": 3
+    }
+  },
+  {
+    "model": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+    "docs": 267,
+    "flagged_docs": 0.8314606741573034,
+    "docs_with_contradiction": 0.8014981273408239,
+    "numbers": 1089,
+    "numbers_supported": 0.7171717171717171,
+    "contradicted_findings": 555,
+    "unverifiable_findings": 43,
+    "contradicted_by_error": {
+      "direction": 256,
+      "value": 155,
+      "arithmetic": 89,
+      "period": 30,
+      "metric": 17,
+      "unit": 7,
+      "rounding": 1
+    }
+  },
+  {
+    "model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "docs": 267,
+    "flagged_docs": 0.8614232209737828,
+    "docs_with_contradiction": 0.846441947565543,
+    "numbers": 776,
+    "numbers_supported": 0.6533505154639175,
+    "contradicted_findings": 558,
+    "unverifiable_findings": 58,
+    "contradicted_by_error": {
+      "direction": 270,
+      "value": 151,
+      "period": 49,
+      "metric": 44,
+      "arithmetic": 18,
+      "scale": 14,
+      "rounding": 12
+    }
+  }
+]

@@ -54,6 +54,19 @@ PRIOR_REF_RE = re.compile(
     r"(?![\w-])",
     re.IGNORECASE,
 )
+_AFTER_LINK_RE = re.compile(r"\s+(?:in|of|for)(?:\s+the)?\s+(?:net\s+)?", re.IGNORECASE)
+_AFTER_BREAK_RE = re.compile(r"[,;:]|\b(?:to|while|and|but|compared|versus|vs)\b", re.IGNORECASE)
+# Words that may follow a direction word when it describes a metric ("rose sharply to");
+# any other word means an adjective on something else ("increased costs").
+_DIR_FOLLOWERS = {
+    "to", "by", "from", "in", "at", "of", "on", "for", "over", "during", "since", "after", "as", "than",
+    "and", "but", "while", "compared", "versus", "back", "up", "down", "again", "further", "slightly",
+    "sharply", "significantly", "modestly", "marginally", "steadily", "strongly", "substantially",
+    "notably", "considerably", "materially", "dramatically", "rapidly", "quickly", "gradually", "about",
+    "around", "nearly", "almost", "roughly", "approximately", "just", "only", "more", "less", "the", "a",
+    "an", "its", "their", "this", "last", "year", "month", "quarter", "year-over-year", "year-on-year",
+    "overall", "somewhat", "even", "also", "between", "through", "below", "above", "toward", "towards",
+}
 _RANGE_START_RE = re.compile(r"(?:since|from|between|through|until|over)\s+(?:the\s+)?$", re.IGNORECASE)
 _SENT_RE = re.compile(r"(?<=[.!?])\s+(?=[A-Z\"'(“])")
 
@@ -99,9 +112,9 @@ def _in(span: tuple[int, int], pos: int) -> bool:
 def _link(pos: int, hits: list[AliasHit], sent: tuple[int, int], max_after: int = 40,
           text: str = "", end: int | None = None) -> AliasHit | None:
     """The metric a number or direction word at `pos` most likely refers to."""
-    if end is not None:  # "$30.4bn in net income", "$416bn of revenue"
+    if end is not None:  # "$30.4bn in net income", "$416bn of revenue", "2.33% for the core CPI"
         for h in hits:
-            if h.start >= end and text[end:h.start].strip().lower() in ("in", "of", "in net", "of net"):
+            if h.start >= end and _AFTER_LINK_RE.fullmatch(text[end:h.start]):
                 return h
     before = [h for h in hits if _in(sent, h.start) and h.end <= pos]
     if before:
@@ -133,6 +146,8 @@ def _bound_period(num: Mention, periods, numbers, sent, brief: Brief, text: str 
             continue  # "from 241k in April; ...": April already belongs to 241k
         if p.end <= num.start and re.search(r"\bto\b", text[lo:hi]):
             continue  # "from $91 in March to $100": March is the start, not this number's period
+        if p.start >= num.end and _AFTER_BREAK_RE.search(text[lo:hi]):
+            continue  # "+78,000 jobs, while the April change", "USD 85.64 ... to its November level"
         resolved = _resolve_period(brief, p)
         after = p.start >= num.end  # "$100 a barrel in April": a period right after wins
         if resolved is not None and (best is None or (after, -gap) > (best[0], -best[1])):
@@ -261,7 +276,15 @@ class Checker:
             o is not num and hit.end <= o.start < num.start for o in all_numbers
         )
 
-        if same_match or (any_match and not same):
+        if same_match:
+            return None
+        if any_match and not same:
+            if hit is not None and METRICS[metric].kind != num.kind and num.kind != "bare":
+                # "241,000 jobs, a 0.10 percentage point increase": payrolls have no figure in
+                # percentage points; the number was borrowed from the unemployment rate
+                other = METRICS[any_match[0].metric].label
+                return Finding(num.start, num.end, num.stated, "contradicted", "metric",
+                               f"{METRICS[metric].label} has no {num.kind} figure; the number belongs to {other}")
             return None
         if any_match and same:
             if hit.alias.strong and tight:
@@ -325,7 +348,22 @@ class Checker:
         numbers = find_numbers(text)
         for d in find_directions(text):
             sent = next(s for s in sents if _in(s, d.start))
-            hit = _link(d.start, aliases, sent, max_after=30)
+            follow = re.match(r"\s+([A-Za-z][\w-]*)", text[d.end:])
+            glued = next((h for h in aliases if h.start == (d.end + follow.start(1) if follow else -1)), None)
+            if glued is not None:
+                hit = glued  # "higher sales", "rising oil prices": the adjective's own noun
+            elif follow and follow.group(1).lower() not in _DIR_FOLLOWERS:
+                continue  # "increased costs": describes something the brief does not cover
+            else:
+                hit = _link(d.start, aliases, sent, max_after=30)
+                obj = re.match(r"\s+(?:in|of)\s+(?:the\s+)?", text[d.end:])
+                if obj:  # "an increase in revenue"
+                    hit = next((h for h in aliases if h.start == d.end + obj.end()), hit)
+                if hit is not None and not hit.alias.strong:
+                    # "core CPI, which excludes food and energy prices, rose": prefer the
+                    # specific metric named earlier in the sentence over a generic word
+                    strong = [h for h in aliases if _in(sent, h.start) and h.end <= d.start and h.alias.strong]
+                    hit = max(strong, key=lambda h: h.end) if strong else hit
             if hit is None:
                 continue
             metric = METRICS.get(hit.alias.metric)
@@ -354,7 +392,8 @@ class Checker:
             # 3.29%"); "unchanged" is allowed a small tolerance for rounding.
             tol = metric.flat_tol * abs(ref) if metric.kind == "usd" and ref else metric.flat_tol
             eps = 1e-9 * max(1.0, abs(ref or 0))
-            wrong = (d.sign > 0 and delta < -eps) or (d.sign < 0 and delta > eps) or (d.sign == 0 and abs(delta) > 2 * tol)
+            wrong = (d.sign > 0 and delta < -eps) or (d.sign < 0 and delta > eps) or \
+                (d.sign != 0 and abs(delta) <= eps) or (d.sign == 0 and abs(delta) > 2 * tol)
             if wrong:
                 what = "change" if basis == "change" else "value"
                 out.append(Finding(d.start, d.end, text[d.start:d.end], "contradicted", "direction",

@@ -52,7 +52,8 @@ _ALIASES = [
     Alias("earnings", "net_income", strong=False),
     *(Alias(p, "eps") for p in ["diluted eps", "eps", "earnings per share", "diluted earnings per share",
                                 "per-share earnings", "diluted earnings"]),
-    *(Alias(p, "net_margin") for p in ["net margin", "profit margin", "net profit margin", "margin"]),
+    *(Alias(p, "net_margin") for p in ["net margin", "profit margin", "net profit margin", "margin", "margins",
+                                       "net margins", "profit margins"]),
     # inflation
     *(Alias(p, "inflation") for p in ["inflation", "headline inflation", "cpi", "headline cpi",
                                       "consumer price index", "consumer price inflation"]),
@@ -61,12 +62,14 @@ _ALIASES = [
     *(Alias(p, "core_inflation") for p in ["core inflation", "core cpi", "core consumer prices",
                                            "core consumer price index", "core consumer price inflation",
                                            "core prices", "excluding food and energy",
-                                           "excluding volatile food and energy",
+                                           "excluding volatile food and energy", "excludes food and energy",
+                                           "excludes volatile food and energy",
                                            "ex food and energy", "core measure", "core index", "core rate"]),
     Alias("core", "core_inflation", strong=False),
     # labour market
     *(Alias(p, "unemployment") for p in ["unemployment rate", "unemployment", "jobless rate", "joblessness"]),
-    *(Alias(p, "payrolls") for p in ["nonfarm payrolls", "non-farm payrolls", "payrolls", "payroll growth",
+    *(Alias(p, "payrolls") for p in ["nonfarm payrolls", "non-farm payrolls", "nonfarm payroll", "non-farm payroll",
+                                     "payrolls", "payroll", "payroll growth",
                                      "job gains", "job growth", "hiring", "employers"]),
     Alias("jobs", "payrolls", strong=False),
     Alias("employment", "payrolls", strong=False),
@@ -134,8 +137,8 @@ DOWN = ["fell", "fall", "falls", "falling", "fallen", "declined", "decline", "de
         "shrank", "contracted", "contraction", "plunged", "edged down", "ticked down", "cut", "lost",
         "retreated", "slumped", "tumbled", "moved down", "eased", "easing", "dropping", "decreasing",
         "sliding", "slipping", "shrinking", "slumping", "plunging", "tumbling", "sank", "sinking"]
-TREND_UP = ["accelerated", "accelerating", "picked up", "quickened", "strengthened"]
-TREND_DOWN = ["slowed", "slowing", "decelerated", "moderated", "cooled", "softened"]
+TREND_UP = ["accelerated", "accelerating", "acceleration", "picked up", "quickened", "strengthened"]
+TREND_DOWN = ["slowed", "slowing", "slowdown", "decelerated", "deceleration", "moderated", "cooled", "softened"]
 FLAT = ["unchanged", "flat", "steady", "stable", "held at", "held steady"]
 
 DIRECTION_WORDS = (
