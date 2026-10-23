@@ -1,0 +1,792 @@
+entity,metric,period,value,source
+Alphabet,eps,FY2019,49.16,SEC XBRL CIK 1652044
+Alphabet,eps,FY2020,2.93,SEC XBRL CIK 1652044
+Alphabet,eps,FY2021,5.61,SEC XBRL CIK 1652044
+Alphabet,eps,FY2022,4.56,SEC XBRL CIK 1652044
+Alphabet,eps,FY2023,5.8,SEC XBRL CIK 1652044
+Alphabet,eps,FY2024,8.04,SEC XBRL CIK 1652044
+Alphabet,eps,FY2025,10.81,SEC XBRL CIK 1652044
+Alphabet,net_income,FY2019,34343000000.0,SEC XBRL CIK 1652044
+Alphabet,net_income,FY2020,40269000000.0,SEC XBRL CIK 1652044
+Alphabet,net_income,FY2021,76033000000.0,SEC XBRL CIK 1652044
+Alphabet,net_income,FY2022,59972000000.0,SEC XBRL CIK 1652044
+Alphabet,net_income,FY2023,73795000000.0,SEC XBRL CIK 1652044
+Alphabet,net_income,FY2024,100118000000.0,SEC XBRL CIK 1652044
+Alphabet,net_income,FY2025,132170000000.0,SEC XBRL CIK 1652044
+Alphabet,revenue,FY2019,161857000000.0,SEC XBRL CIK 1652044
+Alphabet,revenue,FY2020,182527000000.0,SEC XBRL CIK 1652044
+Alphabet,revenue,FY2021,257637000000.0,SEC XBRL CIK 1652044
+Alphabet,revenue,FY2022,282836000000.0,SEC XBRL CIK 1652044
+Alphabet,revenue,FY2023,307394000000.0,SEC XBRL CIK 1652044
+Alphabet,revenue,FY2024,350018000000.0,SEC XBRL CIK 1652044
+Alphabet,revenue,FY2025,402836000000.0,SEC XBRL CIK 1652044
+Amazon,eps,FY2019,23.01,SEC XBRL CIK 1018724
+Amazon,eps,FY2020,2.09,SEC XBRL CIK 1018724
+Amazon,eps,FY2021,3.24,SEC XBRL CIK 1018724
+Amazon,eps,FY2022,-0.27,SEC XBRL CIK 1018724
+Amazon,eps,FY2023,2.9,SEC XBRL CIK 1018724
+Amazon,eps,FY2024,5.53,SEC XBRL CIK 1018724
+Amazon,eps,FY2025,7.17,SEC XBRL CIK 1018724
+Amazon,net_income,FY2019,11588000000.0,SEC XBRL CIK 1018724
+Amazon,net_income,FY2020,21331000000.0,SEC XBRL CIK 1018724
+Amazon,net_income,FY2021,33364000000.0,SEC XBRL CIK 1018724
+Amazon,net_income,FY2022,-2722000000.0,SEC XBRL CIK 1018724
+Amazon,net_income,FY2023,30425000000.0,SEC XBRL CIK 1018724
+Amazon,net_income,FY2024,59248000000.0,SEC XBRL CIK 1018724
+Amazon,net_income,FY2025,77670000000.0,SEC XBRL CIK 1018724
+Amazon,revenue,FY2019,280522000000.0,SEC XBRL CIK 1018724
+Amazon,revenue,FY2020,386064000000.0,SEC XBRL CIK 1018724
+Amazon,revenue,FY2021,469822000000.0,SEC XBRL CIK 1018724
+Amazon,revenue,FY2022,513983000000.0,SEC XBRL CIK 1018724
+Amazon,revenue,FY2023,574785000000.0,SEC XBRL CIK 1018724
+Amazon,revenue,FY2024,637959000000.0,SEC XBRL CIK 1018724
+Amazon,revenue,FY2025,716924000000.0,SEC XBRL CIK 1018724
+Apple,eps,FY2019,2.97,SEC XBRL CIK 320193
+Apple,eps,FY2020,3.28,SEC XBRL CIK 320193
+Apple,eps,FY2021,5.61,SEC XBRL CIK 320193
+Apple,eps,FY2022,6.11,SEC XBRL CIK 320193
+Apple,eps,FY2023,6.13,SEC XBRL CIK 320193
+Apple,eps,FY2024,6.08,SEC XBRL CIK 320193
+Apple,eps,FY2025,7.46,SEC XBRL CIK 320193
+Apple,net_income,FY2019,55256000000.0,SEC XBRL CIK 320193
+Apple,net_income,FY2020,57411000000.0,SEC XBRL CIK 320193
+Apple,net_income,FY2021,94680000000.0,SEC XBRL CIK 320193
+Apple,net_income,FY2022,99803000000.0,SEC XBRL CIK 320193
+Apple,net_income,FY2023,96995000000.0,SEC XBRL CIK 320193
+Apple,net_income,FY2024,93736000000.0,SEC XBRL CIK 320193
+Apple,net_income,FY2025,112010000000.0,SEC XBRL CIK 320193
+Apple,revenue,FY2019,260174000000.0,SEC XBRL CIK 320193
+Apple,revenue,FY2020,274515000000.0,SEC XBRL CIK 320193
+Apple,revenue,FY2021,365817000000.0,SEC XBRL CIK 320193
+Apple,revenue,FY2022,394328000000.0,SEC XBRL CIK 320193
+Apple,revenue,FY2023,383285000000.0,SEC XBRL CIK 320193
+Apple,revenue,FY2024,391035000000.0,SEC XBRL CIK 320193
+Apple,revenue,FY2025,416161000000.0,SEC XBRL CIK 320193
+Coca-Cola,eps,FY2019,2.07,SEC XBRL CIK 21344
+Coca-Cola,eps,FY2020,1.79,SEC XBRL CIK 21344
+Coca-Cola,eps,FY2021,2.25,SEC XBRL CIK 21344
+Coca-Cola,eps,FY2022,2.19,SEC XBRL CIK 21344
+Coca-Cola,eps,FY2023,2.47,SEC XBRL CIK 21344
+Coca-Cola,eps,FY2024,2.46,SEC XBRL CIK 21344
+Coca-Cola,eps,FY2025,3.04,SEC XBRL CIK 21344
+Coca-Cola,net_income,FY2019,8920000000.0,SEC XBRL CIK 21344
+Coca-Cola,net_income,FY2020,7747000000.0,SEC XBRL CIK 21344
+Coca-Cola,net_income,FY2021,9771000000.0,SEC XBRL CIK 21344
+Coca-Cola,net_income,FY2022,9542000000.0,SEC XBRL CIK 21344
+Coca-Cola,net_income,FY2023,10714000000.0,SEC XBRL CIK 21344
+Coca-Cola,net_income,FY2024,10631000000.0,SEC XBRL CIK 21344
+Coca-Cola,net_income,FY2025,13107000000.0,SEC XBRL CIK 21344
+Coca-Cola,revenue,FY2019,37266000000.0,SEC XBRL CIK 21344
+Coca-Cola,revenue,FY2020,33014000000.0,SEC XBRL CIK 21344
+Coca-Cola,revenue,FY2021,38655000000.0,SEC XBRL CIK 21344
+Coca-Cola,revenue,FY2022,43004000000.0,SEC XBRL CIK 21344
+Coca-Cola,revenue,FY2023,45754000000.0,SEC XBRL CIK 21344
+Coca-Cola,revenue,FY2024,47061000000.0,SEC XBRL CIK 21344
+Coca-Cola,revenue,FY2025,47941000000.0,SEC XBRL CIK 21344
+Exxon Mobil,eps,FY2019,3.36,SEC XBRL CIK 34088
+Exxon Mobil,eps,FY2020,-5.25,SEC XBRL CIK 34088
+Exxon Mobil,eps,FY2021,5.39,SEC XBRL CIK 34088
+Exxon Mobil,eps,FY2022,13.26,SEC XBRL CIK 34088
+Exxon Mobil,eps,FY2023,8.89,SEC XBRL CIK 34088
+Exxon Mobil,eps,FY2024,7.84,SEC XBRL CIK 34088
+Exxon Mobil,eps,FY2025,6.7,SEC XBRL CIK 34088
+Exxon Mobil,net_income,FY2019,14340000000.0,SEC XBRL CIK 34088
+Exxon Mobil,net_income,FY2020,-22440000000.0,SEC XBRL CIK 34088
+Exxon Mobil,net_income,FY2021,23040000000.0,SEC XBRL CIK 34088
+Exxon Mobil,net_income,FY2022,55740000000.0,SEC XBRL CIK 34088
+Exxon Mobil,net_income,FY2023,36010000000.0,SEC XBRL CIK 34088
+Exxon Mobil,net_income,FY2024,33680000000.0,SEC XBRL CIK 34088
+Exxon Mobil,net_income,FY2025,28844000000.0,SEC XBRL CIK 34088
+Exxon Mobil,revenue,FY2019,255583000000.0,SEC XBRL CIK 34088
+Exxon Mobil,revenue,FY2020,178574000000.0,SEC XBRL CIK 34088
+Exxon Mobil,revenue,FY2021,276692000000.0,SEC XBRL CIK 34088
+Exxon Mobil,revenue,FY2022,413680000000.0,SEC XBRL CIK 34088
+Exxon Mobil,revenue,FY2023,344582000000.0,SEC XBRL CIK 34088
+Exxon Mobil,revenue,FY2024,349585000000.0,SEC XBRL CIK 34088
+Exxon Mobil,revenue,FY2025,332238000000.0,SEC XBRL CIK 34088
+Intel,eps,FY2019,4.71,SEC XBRL CIK 50863
+Intel,eps,FY2020,4.94,SEC XBRL CIK 50863
+Intel,eps,FY2021,4.86,SEC XBRL CIK 50863
+Intel,eps,FY2022,1.94,SEC XBRL CIK 50863
+Intel,eps,FY2023,0.4,SEC XBRL CIK 50863
+Intel,eps,FY2024,-4.38,SEC XBRL CIK 50863
+Intel,eps,FY2025,-0.06,SEC XBRL CIK 50863
+Intel,net_income,FY2019,21048000000.0,SEC XBRL CIK 50863
+Intel,net_income,FY2020,20899000000.0,SEC XBRL CIK 50863
+Intel,net_income,FY2021,19868000000.0,SEC XBRL CIK 50863
+Intel,net_income,FY2022,8014000000.0,SEC XBRL CIK 50863
+Intel,net_income,FY2023,1689000000.0,SEC XBRL CIK 50863
+Intel,net_income,FY2024,-18756000000.0,SEC XBRL CIK 50863
+Intel,net_income,FY2025,-267000000.0,SEC XBRL CIK 50863
+Intel,revenue,FY2019,71965000000.0,SEC XBRL CIK 50863
+Intel,revenue,FY2020,77867000000.0,SEC XBRL CIK 50863
+Intel,revenue,FY2021,79024000000.0,SEC XBRL CIK 50863
+Intel,revenue,FY2022,63054000000.0,SEC XBRL CIK 50863
+Intel,revenue,FY2023,54228000000.0,SEC XBRL CIK 50863
+Intel,revenue,FY2024,53101000000.0,SEC XBRL CIK 50863
+Intel,revenue,FY2025,52853000000.0,SEC XBRL CIK 50863
+JPMorgan Chase,eps,FY2019,10.72,SEC XBRL CIK 19617
+JPMorgan Chase,eps,FY2020,8.88,SEC XBRL CIK 19617
+JPMorgan Chase,eps,FY2021,15.36,SEC XBRL CIK 19617
+JPMorgan Chase,eps,FY2022,12.09,SEC XBRL CIK 19617
+JPMorgan Chase,eps,FY2023,16.23,SEC XBRL CIK 19617
+JPMorgan Chase,eps,FY2024,19.75,SEC XBRL CIK 19617
+JPMorgan Chase,eps,FY2025,20.02,SEC XBRL CIK 19617
+JPMorgan Chase,net_income,FY2019,36431000000.0,SEC XBRL CIK 19617
+JPMorgan Chase,net_income,FY2020,29131000000.0,SEC XBRL CIK 19617
+JPMorgan Chase,net_income,FY2021,48334000000.0,SEC XBRL CIK 19617
+JPMorgan Chase,net_income,FY2022,37676000000.0,SEC XBRL CIK 19617
+JPMorgan Chase,net_income,FY2023,49552000000.0,SEC XBRL CIK 19617
+JPMorgan Chase,net_income,FY2024,58471000000.0,SEC XBRL CIK 19617
+JPMorgan Chase,net_income,FY2025,57048000000.0,SEC XBRL CIK 19617
+JPMorgan Chase,revenue,FY2019,115720000000.0,SEC XBRL CIK 19617
+JPMorgan Chase,revenue,FY2020,119951000000.0,SEC XBRL CIK 19617
+JPMorgan Chase,revenue,FY2021,121649000000.0,SEC XBRL CIK 19617
+JPMorgan Chase,revenue,FY2022,128695000000.0,SEC XBRL CIK 19617
+JPMorgan Chase,revenue,FY2023,158104000000.0,SEC XBRL CIK 19617
+JPMorgan Chase,revenue,FY2024,177556000000.0,SEC XBRL CIK 19617
+JPMorgan Chase,revenue,FY2025,182447000000.0,SEC XBRL CIK 19617
+Johnson & Johnson,eps,FY2019,5.63,SEC XBRL CIK 200406
+Johnson & Johnson,eps,FY2020,5.51,SEC XBRL CIK 200406
+Johnson & Johnson,eps,FY2021,7.81,SEC XBRL CIK 200406
+Johnson & Johnson,eps,FY2022,6.73,SEC XBRL CIK 200406
+Johnson & Johnson,eps,FY2023,13.72,SEC XBRL CIK 200406
+Johnson & Johnson,eps,FY2024,5.79,SEC XBRL CIK 200406
+Johnson & Johnson,eps,FY2025,11.03,SEC XBRL CIK 200406
+Johnson & Johnson,net_income,FY2019,15119000000.0,SEC XBRL CIK 200406
+Johnson & Johnson,net_income,FY2020,14714000000.0,SEC XBRL CIK 200406
+Johnson & Johnson,net_income,FY2021,20878000000.0,SEC XBRL CIK 200406
+Johnson & Johnson,net_income,FY2022,17941000000.0,SEC XBRL CIK 200406
+Johnson & Johnson,net_income,FY2023,35153000000.0,SEC XBRL CIK 200406
+Johnson & Johnson,net_income,FY2024,14066000000.0,SEC XBRL CIK 200406
+Johnson & Johnson,net_income,FY2025,26804000000.0,SEC XBRL CIK 200406
+Johnson & Johnson,revenue,FY2019,82059000000.0,SEC XBRL CIK 200406
+Johnson & Johnson,revenue,FY2020,82584000000.0,SEC XBRL CIK 200406
+Johnson & Johnson,revenue,FY2021,78740000000.0,SEC XBRL CIK 200406
+Johnson & Johnson,revenue,FY2022,79990000000.0,SEC XBRL CIK 200406
+Johnson & Johnson,revenue,FY2023,85159000000.0,SEC XBRL CIK 200406
+Johnson & Johnson,revenue,FY2024,88821000000.0,SEC XBRL CIK 200406
+Johnson & Johnson,revenue,FY2025,94193000000.0,SEC XBRL CIK 200406
+Meta Platforms,eps,FY2019,6.43,SEC XBRL CIK 1326801
+Meta Platforms,eps,FY2020,10.09,SEC XBRL CIK 1326801
+Meta Platforms,eps,FY2021,13.77,SEC XBRL CIK 1326801
+Meta Platforms,eps,FY2022,8.59,SEC XBRL CIK 1326801
+Meta Platforms,eps,FY2023,14.87,SEC XBRL CIK 1326801
+Meta Platforms,eps,FY2024,23.86,SEC XBRL CIK 1326801
+Meta Platforms,eps,FY2025,23.49,SEC XBRL CIK 1326801
+Meta Platforms,net_income,FY2019,18485000000.0,SEC XBRL CIK 1326801
+Meta Platforms,net_income,FY2020,29146000000.0,SEC XBRL CIK 1326801
+Meta Platforms,net_income,FY2021,39370000000.0,SEC XBRL CIK 1326801
+Meta Platforms,net_income,FY2022,23200000000.0,SEC XBRL CIK 1326801
+Meta Platforms,net_income,FY2023,39098000000.0,SEC XBRL CIK 1326801
+Meta Platforms,net_income,FY2024,62360000000.0,SEC XBRL CIK 1326801
+Meta Platforms,net_income,FY2025,60458000000.0,SEC XBRL CIK 1326801
+Meta Platforms,revenue,FY2019,70697000000.0,SEC XBRL CIK 1326801
+Meta Platforms,revenue,FY2020,85965000000.0,SEC XBRL CIK 1326801
+Meta Platforms,revenue,FY2021,117929000000.0,SEC XBRL CIK 1326801
+Meta Platforms,revenue,FY2022,116609000000.0,SEC XBRL CIK 1326801
+Meta Platforms,revenue,FY2023,134902000000.0,SEC XBRL CIK 1326801
+Meta Platforms,revenue,FY2024,164501000000.0,SEC XBRL CIK 1326801
+Meta Platforms,revenue,FY2025,200966000000.0,SEC XBRL CIK 1326801
+Microsoft,eps,FY2019,5.06,SEC XBRL CIK 789019
+Microsoft,eps,FY2020,5.76,SEC XBRL CIK 789019
+Microsoft,eps,FY2021,8.05,SEC XBRL CIK 789019
+Microsoft,eps,FY2022,9.65,SEC XBRL CIK 789019
+Microsoft,eps,FY2023,9.68,SEC XBRL CIK 789019
+Microsoft,eps,FY2024,11.8,SEC XBRL CIK 789019
+Microsoft,eps,FY2025,13.64,SEC XBRL CIK 789019
+Microsoft,eps,FY2026,17.95,SEC XBRL CIK 789019
+Microsoft,net_income,FY2019,39240000000.0,SEC XBRL CIK 789019
+Microsoft,net_income,FY2020,44281000000.0,SEC XBRL CIK 789019
+Microsoft,net_income,FY2021,61271000000.0,SEC XBRL CIK 789019
+Microsoft,net_income,FY2022,72738000000.0,SEC XBRL CIK 789019
+Microsoft,net_income,FY2023,72361000000.0,SEC XBRL CIK 789019
+Microsoft,net_income,FY2024,88136000000.0,SEC XBRL CIK 789019
+Microsoft,net_income,FY2025,101832000000.0,SEC XBRL CIK 789019
+Microsoft,net_income,FY2026,133749000000.0,SEC XBRL CIK 789019
+Microsoft,revenue,FY2019,125843000000.0,SEC XBRL CIK 789019
+Microsoft,revenue,FY2020,143015000000.0,SEC XBRL CIK 789019
+Microsoft,revenue,FY2021,168088000000.0,SEC XBRL CIK 789019
+Microsoft,revenue,FY2022,198270000000.0,SEC XBRL CIK 789019
+Microsoft,revenue,FY2023,211915000000.0,SEC XBRL CIK 789019
+Microsoft,revenue,FY2024,245122000000.0,SEC XBRL CIK 789019
+Microsoft,revenue,FY2025,281724000000.0,SEC XBRL CIK 789019
+Microsoft,revenue,FY2026,331839000000.0,SEC XBRL CIK 789019
+NVIDIA,eps,FY2019,6.63,SEC XBRL CIK 1045810
+NVIDIA,eps,FY2020,1.13,SEC XBRL CIK 1045810
+NVIDIA,eps,FY2021,1.73,SEC XBRL CIK 1045810
+NVIDIA,eps,FY2022,3.85,SEC XBRL CIK 1045810
+NVIDIA,eps,FY2023,0.17,SEC XBRL CIK 1045810
+NVIDIA,eps,FY2024,1.19,SEC XBRL CIK 1045810
+NVIDIA,eps,FY2025,2.94,SEC XBRL CIK 1045810
+NVIDIA,eps,FY2026,4.9,SEC XBRL CIK 1045810
+NVIDIA,net_income,FY2019,4141000000.0,SEC XBRL CIK 1045810
+NVIDIA,net_income,FY2020,2796000000.0,SEC XBRL CIK 1045810
+NVIDIA,net_income,FY2021,4332000000.0,SEC XBRL CIK 1045810
+NVIDIA,net_income,FY2022,9752000000.0,SEC XBRL CIK 1045810
+NVIDIA,net_income,FY2023,4368000000.0,SEC XBRL CIK 1045810
+NVIDIA,net_income,FY2024,29760000000.0,SEC XBRL CIK 1045810
+NVIDIA,net_income,FY2025,72880000000.0,SEC XBRL CIK 1045810
+NVIDIA,net_income,FY2026,120067000000.0,SEC XBRL CIK 1045810
+NVIDIA,revenue,FY2019,11716000000.0,SEC XBRL CIK 1045810
+NVIDIA,revenue,FY2020,10918000000.0,SEC XBRL CIK 1045810
+NVIDIA,revenue,FY2021,16675000000.0,SEC XBRL CIK 1045810
+NVIDIA,revenue,FY2022,26914000000.0,SEC XBRL CIK 1045810
+NVIDIA,revenue,FY2023,26974000000.0,SEC XBRL CIK 1045810
+NVIDIA,revenue,FY2024,60922000000.0,SEC XBRL CIK 1045810
+NVIDIA,revenue,FY2025,130497000000.0,SEC XBRL CIK 1045810
+NVIDIA,revenue,FY2026,215938000000.0,SEC XBRL CIK 1045810
+Procter & Gamble,eps,FY2019,1.43,SEC XBRL CIK 80424
+Procter & Gamble,eps,FY2020,4.96,SEC XBRL CIK 80424
+Procter & Gamble,eps,FY2021,5.5,SEC XBRL CIK 80424
+Procter & Gamble,eps,FY2022,5.81,SEC XBRL CIK 80424
+Procter & Gamble,eps,FY2023,5.9,SEC XBRL CIK 80424
+Procter & Gamble,eps,FY2024,6.02,SEC XBRL CIK 80424
+Procter & Gamble,eps,FY2025,6.51,SEC XBRL CIK 80424
+Procter & Gamble,eps,FY2026,6.62,SEC XBRL CIK 80424
+Procter & Gamble,net_income,FY2019,3897000000.0,SEC XBRL CIK 80424
+Procter & Gamble,net_income,FY2020,13027000000.0,SEC XBRL CIK 80424
+Procter & Gamble,net_income,FY2021,14306000000.0,SEC XBRL CIK 80424
+Procter & Gamble,net_income,FY2022,14742000000.0,SEC XBRL CIK 80424
+Procter & Gamble,net_income,FY2023,14653000000.0,SEC XBRL CIK 80424
+Procter & Gamble,net_income,FY2024,14879000000.0,SEC XBRL CIK 80424
+Procter & Gamble,net_income,FY2025,15974000000.0,SEC XBRL CIK 80424
+Procter & Gamble,net_income,FY2026,16046000000.0,SEC XBRL CIK 80424
+Procter & Gamble,revenue,FY2019,67684000000.0,SEC XBRL CIK 80424
+Procter & Gamble,revenue,FY2020,70950000000.0,SEC XBRL CIK 80424
+Procter & Gamble,revenue,FY2021,76118000000.0,SEC XBRL CIK 80424
+Procter & Gamble,revenue,FY2022,80187000000.0,SEC XBRL CIK 80424
+Procter & Gamble,revenue,FY2023,82006000000.0,SEC XBRL CIK 80424
+Procter & Gamble,revenue,FY2024,84039000000.0,SEC XBRL CIK 80424
+Procter & Gamble,revenue,FY2025,84284000000.0,SEC XBRL CIK 80424
+Procter & Gamble,revenue,FY2026,87032000000.0,SEC XBRL CIK 80424
+Tesla,eps,FY2019,-0.98,SEC XBRL CIK 1318605
+Tesla,eps,FY2020,0.21,SEC XBRL CIK 1318605
+Tesla,eps,FY2021,1.63,SEC XBRL CIK 1318605
+Tesla,eps,FY2022,3.62,SEC XBRL CIK 1318605
+Tesla,eps,FY2023,4.3,SEC XBRL CIK 1318605
+Tesla,eps,FY2024,2.04,SEC XBRL CIK 1318605
+Tesla,eps,FY2025,1.08,SEC XBRL CIK 1318605
+Tesla,net_income,FY2019,-862000000.0,SEC XBRL CIK 1318605
+Tesla,net_income,FY2020,721000000.0,SEC XBRL CIK 1318605
+Tesla,net_income,FY2021,5519000000.0,SEC XBRL CIK 1318605
+Tesla,net_income,FY2022,12556000000.0,SEC XBRL CIK 1318605
+Tesla,net_income,FY2023,14997000000.0,SEC XBRL CIK 1318605
+Tesla,net_income,FY2024,7091000000.0,SEC XBRL CIK 1318605
+Tesla,net_income,FY2025,3794000000.0,SEC XBRL CIK 1318605
+Tesla,revenue,FY2019,24578000000.0,SEC XBRL CIK 1318605
+Tesla,revenue,FY2020,31536000000.0,SEC XBRL CIK 1318605
+Tesla,revenue,FY2021,53823000000.0,SEC XBRL CIK 1318605
+Tesla,revenue,FY2022,81462000000.0,SEC XBRL CIK 1318605
+Tesla,revenue,FY2023,96773000000.0,SEC XBRL CIK 1318605
+Tesla,revenue,FY2024,97690000000.0,SEC XBRL CIK 1318605
+Tesla,revenue,FY2025,94827000000.0,SEC XBRL CIK 1318605
+US economy,core_inflation,2022-01,6.05,FRED
+US economy,core_inflation,2022-02,6.46,FRED
+US economy,core_inflation,2022-03,6.48,FRED
+US economy,core_inflation,2022-04,6.16,FRED
+US economy,core_inflation,2022-05,6.03,FRED
+US economy,core_inflation,2022-06,5.91,FRED
+US economy,core_inflation,2022-07,5.9,FRED
+US economy,core_inflation,2022-08,6.29,FRED
+US economy,core_inflation,2022-09,6.62,FRED
+US economy,core_inflation,2022-10,6.29,FRED
+US economy,core_inflation,2022-11,5.97,FRED
+US economy,core_inflation,2022-12,5.69,FRED
+US economy,core_inflation,2023-01,5.54,FRED
+US economy,core_inflation,2023-02,5.5,FRED
+US economy,core_inflation,2023-03,5.57,FRED
+US economy,core_inflation,2023-04,5.51,FRED
+US economy,core_inflation,2023-05,5.34,FRED
+US economy,core_inflation,2023-06,4.85,FRED
+US economy,core_inflation,2023-07,4.7,FRED
+US economy,core_inflation,2023-08,4.4,FRED
+US economy,core_inflation,2023-09,4.13,FRED
+US economy,core_inflation,2023-10,4.03,FRED
+US economy,core_inflation,2023-11,4.02,FRED
+US economy,core_inflation,2023-12,3.92,FRED
+US economy,core_inflation,2024-01,3.86,FRED
+US economy,core_inflation,2024-02,3.76,FRED
+US economy,core_inflation,2024-03,3.82,FRED
+US economy,core_inflation,2024-04,3.63,FRED
+US economy,core_inflation,2024-05,3.39,FRED
+US economy,core_inflation,2024-06,3.27,FRED
+US economy,core_inflation,2024-07,3.23,FRED
+US economy,core_inflation,2024-08,3.29,FRED
+US economy,core_inflation,2024-09,3.28,FRED
+US economy,core_inflation,2024-10,3.3,FRED
+US economy,core_inflation,2024-11,3.29,FRED
+US economy,core_inflation,2024-12,3.21,FRED
+US economy,core_inflation,2025-01,3.28,FRED
+US economy,core_inflation,2025-02,3.14,FRED
+US economy,core_inflation,2025-03,2.81,FRED
+US economy,core_inflation,2025-04,2.78,FRED
+US economy,core_inflation,2025-05,2.77,FRED
+US economy,core_inflation,2025-06,2.91,FRED
+US economy,core_inflation,2025-07,3.05,FRED
+US economy,core_inflation,2025-08,3.11,FRED
+US economy,core_inflation,2025-09,3.02,FRED
+US economy,core_inflation,2025-11,2.6,FRED
+US economy,core_inflation,2025-12,2.65,FRED
+US economy,core_inflation,2026-01,2.51,FRED
+US economy,core_inflation,2026-02,2.47,FRED
+US economy,core_inflation,2026-03,2.6,FRED
+US economy,core_inflation,2026-04,2.74,FRED
+US economy,core_inflation,2026-05,2.82,FRED
+US economy,core_inflation,2026-06,2.57,FRED
+US economy,core_inflation,2026-07,2.47,FRED
+US economy,core_inflation,2026-08,2.45,FRED
+US economy,core_inflation,2026-09,2.57,FRED
+US economy,fed_funds,2022-01,0.08,FRED
+US economy,fed_funds,2022-02,0.08,FRED
+US economy,fed_funds,2022-03,0.2,FRED
+US economy,fed_funds,2022-04,0.33,FRED
+US economy,fed_funds,2022-05,0.77,FRED
+US economy,fed_funds,2022-06,1.21,FRED
+US economy,fed_funds,2022-07,1.68,FRED
+US economy,fed_funds,2022-08,2.33,FRED
+US economy,fed_funds,2022-09,2.56,FRED
+US economy,fed_funds,2022-10,3.08,FRED
+US economy,fed_funds,2022-11,3.78,FRED
+US economy,fed_funds,2022-12,4.1,FRED
+US economy,fed_funds,2023-01,4.33,FRED
+US economy,fed_funds,2023-02,4.57,FRED
+US economy,fed_funds,2023-03,4.65,FRED
+US economy,fed_funds,2023-04,4.83,FRED
+US economy,fed_funds,2023-05,5.06,FRED
+US economy,fed_funds,2023-06,5.08,FRED
+US economy,fed_funds,2023-07,5.12,FRED
+US economy,fed_funds,2023-08,5.33,FRED
+US economy,fed_funds,2023-09,5.33,FRED
+US economy,fed_funds,2023-10,5.33,FRED
+US economy,fed_funds,2023-11,5.33,FRED
+US economy,fed_funds,2023-12,5.33,FRED
+US economy,fed_funds,2024-01,5.33,FRED
+US economy,fed_funds,2024-02,5.33,FRED
+US economy,fed_funds,2024-03,5.33,FRED
+US economy,fed_funds,2024-04,5.33,FRED
+US economy,fed_funds,2024-05,5.33,FRED
+US economy,fed_funds,2024-06,5.33,FRED
+US economy,fed_funds,2024-07,5.33,FRED
+US economy,fed_funds,2024-08,5.33,FRED
+US economy,fed_funds,2024-09,5.13,FRED
+US economy,fed_funds,2024-10,4.83,FRED
+US economy,fed_funds,2024-11,4.64,FRED
+US economy,fed_funds,2024-12,4.48,FRED
+US economy,fed_funds,2025-01,4.33,FRED
+US economy,fed_funds,2025-02,4.33,FRED
+US economy,fed_funds,2025-03,4.33,FRED
+US economy,fed_funds,2025-04,4.33,FRED
+US economy,fed_funds,2025-05,4.33,FRED
+US economy,fed_funds,2025-06,4.33,FRED
+US economy,fed_funds,2025-07,4.33,FRED
+US economy,fed_funds,2025-08,4.33,FRED
+US economy,fed_funds,2025-09,4.22,FRED
+US economy,fed_funds,2025-10,4.09,FRED
+US economy,fed_funds,2025-11,3.88,FRED
+US economy,fed_funds,2025-12,3.72,FRED
+US economy,fed_funds,2026-01,3.64,FRED
+US economy,fed_funds,2026-02,3.64,FRED
+US economy,fed_funds,2026-03,3.64,FRED
+US economy,fed_funds,2026-04,3.64,FRED
+US economy,fed_funds,2026-05,3.63,FRED
+US economy,fed_funds,2026-06,3.63,FRED
+US economy,fed_funds,2026-07,3.63,FRED
+US economy,fed_funds,2026-08,3.63,FRED
+US economy,fed_funds,2026-09,3.75,FRED
+US economy,gdp,2022Q1,-1.0,FRED A191RL1Q225SBEA
+US economy,gdp,2022Q2,0.6,FRED A191RL1Q225SBEA
+US economy,gdp,2022Q3,2.7,FRED A191RL1Q225SBEA
+US economy,gdp,2022Q4,2.7,FRED A191RL1Q225SBEA
+US economy,gdp,2023Q1,3.4,FRED A191RL1Q225SBEA
+US economy,gdp,2023Q2,2.2,FRED A191RL1Q225SBEA
+US economy,gdp,2023Q3,4.5,FRED A191RL1Q225SBEA
+US economy,gdp,2023Q4,3.6,FRED A191RL1Q225SBEA
+US economy,gdp,2024Q1,1.4,FRED A191RL1Q225SBEA
+US economy,gdp,2024Q2,3.6,FRED A191RL1Q225SBEA
+US economy,gdp,2024Q3,3.2,FRED A191RL1Q225SBEA
+US economy,gdp,2024Q4,2.4,FRED A191RL1Q225SBEA
+US economy,gdp,2025Q1,0.1,FRED A191RL1Q225SBEA
+US economy,gdp,2025Q2,4.0,FRED A191RL1Q225SBEA
+US economy,gdp,2025Q3,3.9,FRED A191RL1Q225SBEA
+US economy,gdp,2025Q4,0.2,FRED A191RL1Q225SBEA
+US economy,gdp,2026Q1,2.5,FRED A191RL1Q225SBEA
+US economy,gdp,2026Q2,2.2,FRED A191RL1Q225SBEA
+US economy,inflation,2022-01,7.56,FRED
+US economy,inflation,2022-02,7.94,FRED
+US economy,inflation,2022-03,8.57,FRED
+US economy,inflation,2022-04,8.23,FRED
+US economy,inflation,2022-05,8.54,FRED
+US economy,inflation,2022-06,8.98,FRED
+US economy,inflation,2022-07,8.46,FRED
+US economy,inflation,2022-08,8.22,FRED
+US economy,inflation,2022-09,8.19,FRED
+US economy,inflation,2022-10,7.76,FRED
+US economy,inflation,2022-11,7.12,FRED
+US economy,inflation,2022-12,6.4,FRED
+US economy,inflation,2023-01,6.33,FRED
+US economy,inflation,2023-02,5.96,FRED
+US economy,inflation,2023-03,4.92,FRED
+US economy,inflation,2023-04,4.95,FRED
+US economy,inflation,2023-05,4.13,FRED
+US economy,inflation,2023-06,3.07,FRED
+US economy,inflation,2023-07,3.29,FRED
+US economy,inflation,2023-08,3.72,FRED
+US economy,inflation,2023-09,3.69,FRED
+US economy,inflation,2023-10,3.25,FRED
+US economy,inflation,2023-11,3.13,FRED
+US economy,inflation,2023-12,3.32,FRED
+US economy,inflation,2024-01,3.09,FRED
+US economy,inflation,2024-02,3.16,FRED
+US economy,inflation,2024-03,3.49,FRED
+US economy,inflation,2024-04,3.36,FRED
+US economy,inflation,2024-05,3.24,FRED
+US economy,inflation,2024-06,2.97,FRED
+US economy,inflation,2024-07,2.94,FRED
+US economy,inflation,2024-08,2.61,FRED
+US economy,inflation,2024-09,2.43,FRED
+US economy,inflation,2024-10,2.58,FRED
+US economy,inflation,2024-11,2.72,FRED
+US economy,inflation,2024-12,2.87,FRED
+US economy,inflation,2025-01,2.99,FRED
+US economy,inflation,2025-02,2.8,FRED
+US economy,inflation,2025-03,2.38,FRED
+US economy,inflation,2025-04,2.33,FRED
+US economy,inflation,2025-05,2.38,FRED
+US economy,inflation,2025-06,2.68,FRED
+US economy,inflation,2025-07,2.74,FRED
+US economy,inflation,2025-08,2.94,FRED
+US economy,inflation,2025-09,3.02,FRED
+US economy,inflation,2025-11,2.7,FRED
+US economy,inflation,2025-12,2.65,FRED
+US economy,inflation,2026-01,2.39,FRED
+US economy,inflation,2026-02,2.43,FRED
+US economy,inflation,2026-03,3.29,FRED
+US economy,inflation,2026-04,3.78,FRED
+US economy,inflation,2026-05,4.17,FRED
+US economy,inflation,2026-06,3.46,FRED
+US economy,inflation,2026-07,3.3,FRED
+US economy,inflation,2026-08,3.35,FRED
+US economy,inflation,2026-09,3.72,FRED
+US economy,oil,2022-01,83.22,FRED
+US economy,oil,2022-02,91.64,FRED
+US economy,oil,2022-03,108.5,FRED
+US economy,oil,2022-04,101.78,FRED
+US economy,oil,2022-05,109.55,FRED
+US economy,oil,2022-06,114.84,FRED
+US economy,oil,2022-07,101.62,FRED
+US economy,oil,2022-08,93.67,FRED
+US economy,oil,2022-09,84.26,FRED
+US economy,oil,2022-10,87.55,FRED
+US economy,oil,2022-11,84.37,FRED
+US economy,oil,2022-12,76.44,FRED
+US economy,oil,2023-01,78.12,FRED
+US economy,oil,2023-02,76.83,FRED
+US economy,oil,2023-03,73.28,FRED
+US economy,oil,2023-04,79.45,FRED
+US economy,oil,2023-05,71.58,FRED
+US economy,oil,2023-06,70.25,FRED
+US economy,oil,2023-07,76.07,FRED
+US economy,oil,2023-08,81.39,FRED
+US economy,oil,2023-09,89.42,FRED
+US economy,oil,2023-10,85.64,FRED
+US economy,oil,2023-11,77.68,FRED
+US economy,oil,2023-12,71.9,FRED
+US economy,oil,2024-01,74.15,FRED
+US economy,oil,2024-02,77.25,FRED
+US economy,oil,2024-03,81.28,FRED
+US economy,oil,2024-04,85.35,FRED
+US economy,oil,2024-05,80.02,FRED
+US economy,oil,2024-06,79.77,FRED
+US economy,oil,2024-07,81.8,FRED
+US economy,oil,2024-08,76.68,FRED
+US economy,oil,2024-09,70.24,FRED
+US economy,oil,2024-10,71.98,FRED
+US economy,oil,2024-11,69.95,FRED
+US economy,oil,2024-12,70.12,FRED
+US economy,oil,2025-01,75.74,FRED
+US economy,oil,2025-02,71.53,FRED
+US economy,oil,2025-03,68.24,FRED
+US economy,oil,2025-04,63.54,FRED
+US economy,oil,2025-05,62.17,FRED
+US economy,oil,2025-06,68.17,FRED
+US economy,oil,2025-07,68.39,FRED
+US economy,oil,2025-08,64.86,FRED
+US economy,oil,2025-09,63.96,FRED
+US economy,oil,2025-10,60.89,FRED
+US economy,oil,2025-11,60.06,FRED
+US economy,oil,2025-12,57.97,FRED
+US economy,oil,2026-01,60.04,FRED
+US economy,oil,2026-02,64.51,FRED
+US economy,oil,2026-03,91.38,FRED
+US economy,oil,2026-04,100.32,FRED
+US economy,oil,2026-05,102.13,FRED
+US economy,oil,2026-06,84.81,FRED
+US economy,oil,2026-07,80.46,FRED
+US economy,oil,2026-08,83.9,FRED
+US economy,oil,2026-09,97.31,FRED
+US economy,payrolls,2022-01,190000.0,FRED
+US economy,payrolls,2022-02,819000.0,FRED
+US economy,payrolls,2022-03,490000.0,FRED
+US economy,payrolls,2022-04,308000.0,FRED
+US economy,payrolls,2022-05,301000.0,FRED
+US economy,payrolls,2022-06,434000.0,FRED
+US economy,payrolls,2022-07,714000.0,FRED
+US economy,payrolls,2022-08,290000.0,FRED
+US economy,payrolls,2022-09,220000.0,FRED
+US economy,payrolls,2022-10,357000.0,FRED
+US economy,payrolls,2022-11,303000.0,FRED
+US economy,payrolls,2022-12,100000.0,FRED
+US economy,payrolls,2023-01,434000.0,FRED
+US economy,payrolls,2023-02,290000.0,FRED
+US economy,payrolls,2023-03,68000.0,FRED
+US economy,payrolls,2023-04,241000.0,FRED
+US economy,payrolls,2023-05,280000.0,FRED
+US economy,payrolls,2023-06,225000.0,FRED
+US economy,payrolls,2023-07,163000.0,FRED
+US economy,payrolls,2023-08,218000.0,FRED
+US economy,payrolls,2023-09,156000.0,FRED
+US economy,payrolls,2023-10,159000.0,FRED
+US economy,payrolls,2023-11,127000.0,FRED
+US economy,payrolls,2023-12,154000.0,FRED
+US economy,payrolls,2024-01,175000.0,FRED
+US economy,payrolls,2024-02,206000.0,FRED
+US economy,payrolls,2024-03,228000.0,FRED
+US economy,payrolls,2024-04,64000.0,FRED
+US economy,payrolls,2024-05,78000.0,FRED
+US economy,payrolls,2024-06,87000.0,FRED
+US economy,payrolls,2024-07,53000.0,FRED
+US economy,payrolls,2024-08,9000.0,FRED
+US economy,payrolls,2024-09,155000.0,FRED
+US economy,payrolls,2024-10,33000.0,FRED
+US economy,payrolls,2024-11,134000.0,FRED
+US economy,payrolls,2024-12,237000.0,FRED
+US economy,payrolls,2025-01,-48000.0,FRED
+US economy,payrolls,2025-02,42000.0,FRED
+US economy,payrolls,2025-03,67000.0,FRED
+US economy,payrolls,2025-04,108000.0,FRED
+US economy,payrolls,2025-05,13000.0,FRED
+US economy,payrolls,2025-06,-20000.0,FRED
+US economy,payrolls,2025-07,64000.0,FRED
+US economy,payrolls,2025-08,-70000.0,FRED
+US economy,payrolls,2025-09,76000.0,FRED
+US economy,payrolls,2025-10,-140000.0,FRED
+US economy,payrolls,2025-11,41000.0,FRED
+US economy,payrolls,2025-12,-17000.0,FRED
+US economy,payrolls,2026-01,160000.0,FRED
+US economy,payrolls,2026-02,-156000.0,FRED
+US economy,payrolls,2026-03,214000.0,FRED
+US economy,payrolls,2026-04,148000.0,FRED
+US economy,payrolls,2026-05,63000.0,FRED
+US economy,payrolls,2026-06,31000.0,FRED
+US economy,payrolls,2026-07,-10000.0,FRED
+US economy,payrolls,2026-08,133000.0,FRED
+US economy,payrolls,2026-09,29000.0,FRED
+US economy,unemployment,2022-01,4.0,FRED
+US economy,unemployment,2022-02,3.9,FRED
+US economy,unemployment,2022-03,3.7,FRED
+US economy,unemployment,2022-04,3.7,FRED
+US economy,unemployment,2022-05,3.6,FRED
+US economy,unemployment,2022-06,3.6,FRED
+US economy,unemployment,2022-07,3.5,FRED
+US economy,unemployment,2022-08,3.6,FRED
+US economy,unemployment,2022-09,3.5,FRED
+US economy,unemployment,2022-10,3.6,FRED
+US economy,unemployment,2022-11,3.6,FRED
+US economy,unemployment,2022-12,3.5,FRED
+US economy,unemployment,2023-01,3.5,FRED
+US economy,unemployment,2023-02,3.6,FRED
+US economy,unemployment,2023-03,3.5,FRED
+US economy,unemployment,2023-04,3.4,FRED
+US economy,unemployment,2023-05,3.6,FRED
+US economy,unemployment,2023-06,3.6,FRED
+US economy,unemployment,2023-07,3.5,FRED
+US economy,unemployment,2023-08,3.7,FRED
+US economy,unemployment,2023-09,3.7,FRED
+US economy,unemployment,2023-10,3.9,FRED
+US economy,unemployment,2023-11,3.7,FRED
+US economy,unemployment,2023-12,3.8,FRED
+US economy,unemployment,2024-01,3.7,FRED
+US economy,unemployment,2024-02,3.9,FRED
+US economy,unemployment,2024-03,3.9,FRED
+US economy,unemployment,2024-04,3.9,FRED
+US economy,unemployment,2024-05,3.9,FRED
+US economy,unemployment,2024-06,4.1,FRED
+US economy,unemployment,2024-07,4.2,FRED
+US economy,unemployment,2024-08,4.2,FRED
+US economy,unemployment,2024-09,4.1,FRED
+US economy,unemployment,2024-10,4.1,FRED
+US economy,unemployment,2024-11,4.2,FRED
+US economy,unemployment,2024-12,4.1,FRED
+US economy,unemployment,2025-01,4.0,FRED
+US economy,unemployment,2025-02,4.2,FRED
+US economy,unemployment,2025-03,4.2,FRED
+US economy,unemployment,2025-04,4.2,FRED
+US economy,unemployment,2025-05,4.3,FRED
+US economy,unemployment,2025-06,4.1,FRED
+US economy,unemployment,2025-07,4.3,FRED
+US economy,unemployment,2025-08,4.3,FRED
+US economy,unemployment,2025-09,4.4,FRED
+US economy,unemployment,2025-11,4.5,FRED
+US economy,unemployment,2025-12,4.4,FRED
+US economy,unemployment,2026-01,4.3,FRED
+US economy,unemployment,2026-02,4.4,FRED
+US economy,unemployment,2026-03,4.3,FRED
+US economy,unemployment,2026-04,4.3,FRED
+US economy,unemployment,2026-05,4.3,FRED
+US economy,unemployment,2026-06,4.2,FRED
+US economy,unemployment,2026-07,4.1,FRED
+US economy,unemployment,2026-08,4.1,FRED
+US economy,unemployment,2026-09,4.2,FRED
+US economy,yield_10y,2022-01,1.76,FRED
+US economy,yield_10y,2022-02,1.93,FRED
+US economy,yield_10y,2022-03,2.13,FRED
+US economy,yield_10y,2022-04,2.75,FRED
+US economy,yield_10y,2022-05,2.9,FRED
+US economy,yield_10y,2022-06,3.14,FRED
+US economy,yield_10y,2022-07,2.9,FRED
+US economy,yield_10y,2022-08,2.9,FRED
+US economy,yield_10y,2022-09,3.52,FRED
+US economy,yield_10y,2022-10,3.98,FRED
+US economy,yield_10y,2022-11,3.89,FRED
+US economy,yield_10y,2022-12,3.62,FRED
+US economy,yield_10y,2023-01,3.53,FRED
+US economy,yield_10y,2023-02,3.75,FRED
+US economy,yield_10y,2023-03,3.66,FRED
+US economy,yield_10y,2023-04,3.46,FRED
+US economy,yield_10y,2023-05,3.57,FRED
+US economy,yield_10y,2023-06,3.75,FRED
+US economy,yield_10y,2023-07,3.9,FRED
+US economy,yield_10y,2023-08,4.17,FRED
+US economy,yield_10y,2023-09,4.38,FRED
+US economy,yield_10y,2023-10,4.8,FRED
+US economy,yield_10y,2023-11,4.5,FRED
+US economy,yield_10y,2023-12,4.02,FRED
+US economy,yield_10y,2024-01,4.06,FRED
+US economy,yield_10y,2024-02,4.21,FRED
+US economy,yield_10y,2024-03,4.21,FRED
+US economy,yield_10y,2024-04,4.54,FRED
+US economy,yield_10y,2024-05,4.48,FRED
+US economy,yield_10y,2024-06,4.31,FRED
+US economy,yield_10y,2024-07,4.25,FRED
+US economy,yield_10y,2024-08,3.87,FRED
+US economy,yield_10y,2024-09,3.72,FRED
+US economy,yield_10y,2024-10,4.1,FRED
+US economy,yield_10y,2024-11,4.36,FRED
+US economy,yield_10y,2024-12,4.39,FRED
+US economy,yield_10y,2025-01,4.63,FRED
+US economy,yield_10y,2025-02,4.45,FRED
+US economy,yield_10y,2025-03,4.28,FRED
+US economy,yield_10y,2025-04,4.28,FRED
+US economy,yield_10y,2025-05,4.42,FRED
+US economy,yield_10y,2025-06,4.38,FRED
+US economy,yield_10y,2025-07,4.39,FRED
+US economy,yield_10y,2025-08,4.26,FRED
+US economy,yield_10y,2025-09,4.12,FRED
+US economy,yield_10y,2025-10,4.06,FRED
+US economy,yield_10y,2025-11,4.09,FRED
+US economy,yield_10y,2025-12,4.14,FRED
+US economy,yield_10y,2026-01,4.21,FRED
+US economy,yield_10y,2026-02,4.13,FRED
+US economy,yield_10y,2026-03,4.25,FRED
+US economy,yield_10y,2026-04,4.32,FRED
+US economy,yield_10y,2026-05,4.48,FRED
+US economy,yield_10y,2026-06,4.47,FRED
+US economy,yield_10y,2026-07,4.6,FRED
+US economy,yield_10y,2026-08,4.68,FRED
+US economy,yield_10y,2026-09,4.99,FRED
+US economy,yield_2y,2022-01,0.98,FRED
+US economy,yield_2y,2022-02,1.44,FRED
+US economy,yield_2y,2022-03,1.91,FRED
+US economy,yield_2y,2022-04,2.54,FRED
+US economy,yield_2y,2022-05,2.62,FRED
+US economy,yield_2y,2022-06,3.0,FRED
+US economy,yield_2y,2022-07,3.04,FRED
+US economy,yield_2y,2022-08,3.25,FRED
+US economy,yield_2y,2022-09,3.86,FRED
+US economy,yield_2y,2022-10,4.38,FRED
+US economy,yield_2y,2022-11,4.5,FRED
+US economy,yield_2y,2022-12,4.29,FRED
+US economy,yield_2y,2023-01,4.21,FRED
+US economy,yield_2y,2023-02,4.53,FRED
+US economy,yield_2y,2023-03,4.3,FRED
+US economy,yield_2y,2023-04,4.02,FRED
+US economy,yield_2y,2023-05,4.13,FRED
+US economy,yield_2y,2023-06,4.64,FRED
+US economy,yield_2y,2023-07,4.83,FRED
+US economy,yield_2y,2023-08,4.9,FRED
+US economy,yield_2y,2023-09,5.02,FRED
+US economy,yield_2y,2023-10,5.07,FRED
+US economy,yield_2y,2023-11,4.88,FRED
+US economy,yield_2y,2023-12,4.46,FRED
+US economy,yield_2y,2024-01,4.32,FRED
+US economy,yield_2y,2024-02,4.54,FRED
+US economy,yield_2y,2024-03,4.59,FRED
+US economy,yield_2y,2024-04,4.87,FRED
+US economy,yield_2y,2024-05,4.86,FRED
+US economy,yield_2y,2024-06,4.74,FRED
+US economy,yield_2y,2024-07,4.5,FRED
+US economy,yield_2y,2024-08,3.97,FRED
+US economy,yield_2y,2024-09,3.62,FRED
+US economy,yield_2y,2024-10,3.97,FRED
+US economy,yield_2y,2024-11,4.26,FRED
+US economy,yield_2y,2024-12,4.23,FRED
+US economy,yield_2y,2025-01,4.27,FRED
+US economy,yield_2y,2025-02,4.21,FRED
+US economy,yield_2y,2025-03,3.97,FRED
+US economy,yield_2y,2025-04,3.78,FRED
+US economy,yield_2y,2025-05,3.92,FRED
+US economy,yield_2y,2025-06,3.89,FRED
+US economy,yield_2y,2025-07,3.88,FRED
+US economy,yield_2y,2025-08,3.7,FRED
+US economy,yield_2y,2025-09,3.57,FRED
+US economy,yield_2y,2025-10,3.52,FRED
+US economy,yield_2y,2025-11,3.55,FRED
+US economy,yield_2y,2025-12,3.5,FRED
+US economy,yield_2y,2026-01,3.54,FRED
+US economy,yield_2y,2026-02,3.47,FRED
+US economy,yield_2y,2026-03,3.71,FRED
+US economy,yield_2y,2026-04,3.8,FRED
+US economy,yield_2y,2026-05,4.0,FRED
+US economy,yield_2y,2026-06,4.11,FRED
+US economy,yield_2y,2026-07,4.22,FRED
+US economy,yield_2y,2026-08,4.22,FRED
+US economy,yield_2y,2026-09,4.65,FRED
+Visa,net_income,FY2019,12080000000.0,SEC XBRL CIK 1403161
+Visa,net_income,FY2020,10866000000.0,SEC XBRL CIK 1403161
+Visa,net_income,FY2021,12311000000.0,SEC XBRL CIK 1403161
+Visa,net_income,FY2022,14957000000.0,SEC XBRL CIK 1403161
+Visa,net_income,FY2023,17273000000.0,SEC XBRL CIK 1403161
+Visa,net_income,FY2024,19743000000.0,SEC XBRL CIK 1403161
+Visa,net_income,FY2025,20058000000.0,SEC XBRL CIK 1403161
+Visa,revenue,FY2019,22977000000.0,SEC XBRL CIK 1403161
+Visa,revenue,FY2020,21846000000.0,SEC XBRL CIK 1403161
+Visa,revenue,FY2021,24105000000.0,SEC XBRL CIK 1403161
+Visa,revenue,FY2022,29310000000.0,SEC XBRL CIK 1403161
+Visa,revenue,FY2023,32653000000.0,SEC XBRL CIK 1403161
+Visa,revenue,FY2024,35926000000.0,SEC XBRL CIK 1403161
+Visa,revenue,FY2025,40000000000.0,SEC XBRL CIK 1403161
+Walmart,eps,FY2019,2.26,SEC XBRL CIK 104169
+Walmart,eps,FY2020,5.19,SEC XBRL CIK 104169
+Walmart,eps,FY2021,4.75,SEC XBRL CIK 104169
+Walmart,eps,FY2022,1.62,SEC XBRL CIK 104169
+Walmart,eps,FY2023,1.42,SEC XBRL CIK 104169
+Walmart,eps,FY2024,1.91,SEC XBRL CIK 104169
+Walmart,eps,FY2025,2.41,SEC XBRL CIK 104169
+Walmart,eps,FY2026,2.73,SEC XBRL CIK 104169
+Walmart,net_income,FY2019,6670000000.0,SEC XBRL CIK 104169
+Walmart,net_income,FY2020,14881000000.0,SEC XBRL CIK 104169
+Walmart,net_income,FY2021,13510000000.0,SEC XBRL CIK 104169
+Walmart,net_income,FY2022,13673000000.0,SEC XBRL CIK 104169
+Walmart,net_income,FY2023,11680000000.0,SEC XBRL CIK 104169
+Walmart,net_income,FY2024,15511000000.0,SEC XBRL CIK 104169
+Walmart,net_income,FY2025,19436000000.0,SEC XBRL CIK 104169
+Walmart,net_income,FY2026,21893000000.0,SEC XBRL CIK 104169
+Walmart,revenue,FY2019,510329000000.0,SEC XBRL CIK 104169
+Walmart,revenue,FY2020,519926000000.0,SEC XBRL CIK 104169
+Walmart,revenue,FY2021,555233000000.0,SEC XBRL CIK 104169
+Walmart,revenue,FY2022,567762000000.0,SEC XBRL CIK 104169
+Walmart,revenue,FY2023,605881000000.0,SEC XBRL CIK 104169
+Walmart,revenue,FY2024,642637000000.0,SEC XBRL CIK 104169
+Walmart,revenue,FY2025,674538000000.0,SEC XBRL CIK 104169
+Walmart,revenue,FY2026,706413000000.0,SEC XBRL CIK 104169

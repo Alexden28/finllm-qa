@@ -1,0 +1,1058 @@
+{
+  "results": {
+    "dev": {
+      "arithmetic": {
+        "n": 105,
+        "flag_rate": 1.0,
+        "located": 1.0,
+        "typed": 0.9714285714285714
+      },
+      "clean": {
+        "n": 267,
+        "flag_rate": 0.0
+      },
+      "direction": {
+        "n": 183,
+        "flag_rate": 1.0,
+        "located": 1.0,
+        "typed": 1.0
+      },
+      "entity": {
+        "n": 120,
+        "flag_rate": 1.0,
+        "located": 1.0,
+        "typed": 1.0
+      },
+      "metric": {
+        "n": 105,
+        "flag_rate": 0.9714285714285714,
+        "located": 0.9714285714285714,
+        "typed": 0.9714285714285714
+      },
+      "period": {
+        "n": 265,
+        "flag_rate": 0.9886792452830189,
+        "located": 0.9886792452830189,
+        "typed": 0.9886792452830189
+      },
+      "period_swap": {
+        "n": 251,
+        "flag_rate": 0.9043824701195219,
+        "located": 0.9043824701195219,
+        "typed": 0.9043824701195219
+      },
+      "scale": {
+        "n": 79,
+        "flag_rate": 1.0,
+        "located": 1.0,
+        "typed": 1.0
+      },
+      "unit": {
+        "n": 42,
+        "flag_rate": 1.0,
+        "located": 1.0,
+        "typed": 1.0
+      },
+      "unsupported": {
+        "n": 267,
+        "flag_rate": 1.0,
+        "located": 1.0,
+        "typed": 1.0
+      },
+      "value": {
+        "n": 265,
+        "flag_rate": 1.0,
+        "located": 1.0,
+        "typed": 0.8981132075471698
+      }
+    },
+    "heldout": {
+      "arithmetic": {
+        "n": 99,
+        "flag_rate": 1.0,
+        "located": 1.0,
+        "typed": 0.9393939393939394
+      },
+      "clean": {
+        "n": 267,
+        "flag_rate": 0.0
+      },
+      "direction": {
+        "n": 32,
+        "flag_rate": 1.0,
+        "located": 1.0,
+        "typed": 1.0
+      },
+      "entity": {
+        "n": 79,
+        "flag_rate": 1.0,
+        "located": 1.0,
+        "typed": 1.0
+      },
+      "metric": {
+        "n": 122,
+        "flag_rate": 0.8278688524590164,
+        "located": 0.8278688524590164,
+        "typed": 0.8278688524590164
+      },
+      "period": {
+        "n": 264,
+        "flag_rate": 0.9848484848484849,
+        "located": 0.9848484848484849,
+        "typed": 0.9848484848484849
+      },
+      "period_swap": {
+        "n": 248,
+        "flag_rate": 0.7580645161290323,
+        "located": 0.7580645161290323,
+        "typed": 0.7580645161290323
+      },
+      "scale": {
+        "n": 79,
+        "flag_rate": 1.0,
+        "located": 1.0,
+        "typed": 1.0
+      },
+      "unit": {
+        "n": 68,
+        "flag_rate": 1.0,
+        "located": 1.0,
+        "typed": 1.0
+      },
+      "unsupported": {
+        "n": 267,
+        "flag_rate": 1.0,
+        "located": 1.0,
+        "typed": 1.0
+      },
+      "value": {
+        "n": 265,
+        "flag_rate": 1.0,
+        "located": 1.0,
+        "typed": 0.8490566037735849
+      }
+    }
+  },
+  "misses": [
+    {
+      "id": "US-inflation-2023-01/heldout/period_swap",
+      "text": "Price pressures faded in December 2022: the CPI rose 6.33 percent from a year earlier, against 6.40% a month before, and the core measure was 5.54%.",
+      "changed": [
+        "January 2023",
+        "December 2022"
+      ]
+    },
+    {
+      "id": "US-inflation-2023-02/heldout/period_swap",
+      "text": "Price pressures faded in January 2023: the CPI rose 5.96% from a year earlier, against 6.33 percent a month before, and the core measure was 5.50%.",
+      "changed": [
+        "February 2023",
+        "January 2023"
+      ]
+    },
+    {
+      "id": "US-inflation-2023-03/heldout/period_swap",
+      "text": "Price pressures faded in February 2023: the CPI rose 4.92% from a year earlier, against 5.96% a month before, and the core measure was 5.57 percent.",
+      "changed": [
+        "March 2023",
+        "February 2023"
+      ]
+    },
+    {
+      "id": "US-inflation-2023-04/heldout/period_swap",
+      "text": "Price pressures built in March 2023: the CPI rose 4.95 percent from a year earlier, against 4.92 percent a month before, and the core measure was 5.51%.",
+      "changed": [
+        "April 2023",
+        "March 2023"
+      ]
+    },
+    {
+      "id": "US-inflation-2023-06/heldout/period_swap",
+      "text": "May's CPI report showed headline inflation of 3.07 percent and core inflation of 4.85%, versus 4.13% and 5.34% in May.",
+      "changed": [
+        "June",
+        "May"
+      ]
+    },
+    {
+      "id": "US-inflation-2023-07/heldout/period_swap",
+      "text": "Price pressures built in June 2023: the CPI rose 3.29% from a year earlier, against 3.07% a month before, and the core measure was 4.70 percent.",
+      "changed": [
+        "July 2023",
+        "June 2023"
+      ]
+    },
+    {
+      "id": "US-inflation-2023-08/dev/period",
+      "text": "Annual CPI inflation accelerated to 3.72% in May, from 3.29% the month before, while core CPI stood at 4.40 percent.",
+      "changed": [
+        "August",
+        "May"
+      ]
+    },
+    {
+      "id": "US-inflation-2023-08/heldout/period_swap",
+      "text": "July's CPI report showed headline inflation of 3.72 percent and core inflation of 4.40 percent, versus 3.29% and 4.70 percent in July.",
+      "changed": [
+        "August",
+        "July"
+      ]
+    },
+    {
+      "id": "US-inflation-2023-09/heldout/period_swap",
+      "text": "August's CPI report showed headline inflation of 3.69% and core inflation of 4.13 percent, versus 3.72% and 4.40 percent in August.",
+      "changed": [
+        "September",
+        "August"
+      ]
+    },
+    {
+      "id": "US-inflation-2023-10/heldout/period_swap",
+      "text": "Price pressures faded in September 2023: the CPI rose 3.25 percent from a year earlier, against 3.69 percent a month before, and the core measure was 4.03%.",
+      "changed": [
+        "October 2023",
+        "September 2023"
+      ]
+    },
+    {
+      "id": "US-inflation-2023-11/heldout/period_swap",
+      "text": "October's CPI report showed headline inflation of 3.13 percent and core inflation of 4.02 percent, versus 3.25 percent and 4.03% in October.",
+      "changed": [
+        "November",
+        "October"
+      ]
+    },
+    {
+      "id": "US-inflation-2023-12/heldout/period_swap",
+      "text": "November's CPI report showed headline inflation of 3.32% and core inflation of 3.92 percent, versus 3.13 percent and 4.02% in November.",
+      "changed": [
+        "December",
+        "November"
+      ]
+    },
+    {
+      "id": "US-inflation-2024-01/heldout/period_swap",
+      "text": "Price pressures faded in December 2023: the CPI rose 3.09 percent from a year earlier, against 3.32 percent a month before, and the core measure was 3.86%.",
+      "changed": [
+        "January 2024",
+        "December 2023"
+      ]
+    },
+    {
+      "id": "US-inflation-2024-02/heldout/period_swap",
+      "text": "Price pressures built in January 2024: the CPI rose 3.16 percent from a year earlier, against 3.09 percent a month before, and the core measure was 3.76%.",
+      "changed": [
+        "February 2024",
+        "January 2024"
+      ]
+    },
+    {
+      "id": "US-inflation-2024-03/heldout/period_swap",
+      "text": "Price pressures built in February 2024: the CPI rose 3.49% from a year earlier, against 3.16% a month before, and the core measure was 3.82%.",
+      "changed": [
+        "March 2024",
+        "February 2024"
+      ]
+    },
+    {
+      "id": "US-inflation-2024-04/heldout/period_swap",
+      "text": "March's CPI report showed headline inflation of 3.36% and core inflation of 3.63%, versus 3.49% and 3.82% in March.",
+      "changed": [
+        "April",
+        "March"
+      ]
+    },
+    {
+      "id": "US-inflation-2024-05/heldout/period_swap",
+      "text": "Price pressures faded in April 2024: the CPI rose 3.24 percent from a year earlier, against 3.36% a month before, and the core measure was 3.39%.",
+      "changed": [
+        "May 2024",
+        "April 2024"
+      ]
+    },
+    {
+      "id": "US-inflation-2024-06/heldout/period_swap",
+      "text": "May's CPI report showed headline inflation of 2.97 percent and core inflation of 3.27%, versus 3.24 percent and 3.39% in May.",
+      "changed": [
+        "June",
+        "May"
+      ]
+    },
+    {
+      "id": "US-inflation-2024-07/heldout/period_swap",
+      "text": "June's CPI report showed headline inflation of 2.94 percent and core inflation of 3.23%, versus 2.97 percent and 3.27 percent in June.",
+      "changed": [
+        "July",
+        "June"
+      ]
+    },
+    {
+      "id": "US-inflation-2024-08/heldout/period_swap",
+      "text": "July's CPI report showed headline inflation of 2.61% and core inflation of 3.29%, versus 2.94% and 3.23% in July.",
+      "changed": [
+        "August",
+        "July"
+      ]
+    },
+    {
+      "id": "US-inflation-2024-09/heldout/period_swap",
+      "text": "Price pressures faded in August 2024: the CPI rose 2.43% from a year earlier, against 2.61% a month before, and the core measure was 3.28 percent.",
+      "changed": [
+        "September 2024",
+        "August 2024"
+      ]
+    },
+    {
+      "id": "US-inflation-2024-10/heldout/period_swap",
+      "text": "Price pressures built in September 2024: the CPI rose 2.58% from a year earlier, against 2.43% a month before, and the core measure was 3.30%.",
+      "changed": [
+        "October 2024",
+        "September 2024"
+      ]
+    },
+    {
+      "id": "US-inflation-2024-11/heldout/period_swap",
+      "text": "October's CPI report showed headline inflation of 2.72% and core inflation of 3.29 percent, versus 2.58 percent and 3.30 percent in October.",
+      "changed": [
+        "November",
+        "October"
+      ]
+    },
+    {
+      "id": "US-inflation-2024-12/heldout/period_swap",
+      "text": "Price pressures built in November 2024: the CPI rose 2.87% from a year earlier, against 2.72% a month before, and the core measure was 3.21%.",
+      "changed": [
+        "December 2024",
+        "November 2024"
+      ]
+    },
+    {
+      "id": "US-inflation-2025-01/heldout/period_swap",
+      "text": "December's CPI report showed headline inflation of 2.99% and core inflation of 3.28 percent, versus 2.87% and 3.21 percent in December.",
+      "changed": [
+        "January",
+        "December"
+      ]
+    },
+    {
+      "id": "US-inflation-2025-02/heldout/period_swap",
+      "text": "January's CPI report showed headline inflation of 2.80% and core inflation of 3.14 percent, versus 2.99% and 3.28% in January.",
+      "changed": [
+        "February",
+        "January"
+      ]
+    },
+    {
+      "id": "US-inflation-2025-03/heldout/period_swap",
+      "text": "Price pressures faded in February 2025: the CPI rose 2.38% from a year earlier, against 2.80 percent a month before, and the core measure was 2.81%.",
+      "changed": [
+        "March 2025",
+        "February 2025"
+      ]
+    },
+    {
+      "id": "US-inflation-2025-04/heldout/period_swap",
+      "text": "Price pressures faded in March 2025: the CPI rose 2.33 percent from a year earlier, against 2.38% a month before, and the core measure was 2.78%.",
+      "changed": [
+        "April 2025",
+        "March 2025"
+      ]
+    },
+    {
+      "id": "US-inflation-2025-05/heldout/period_swap",
+      "text": "Price pressures built in April 2025: the CPI rose 2.38% from a year earlier, against 2.33% a month before, and the core measure was 2.77 percent.",
+      "changed": [
+        "May 2025",
+        "April 2025"
+      ]
+    },
+    {
+      "id": "US-inflation-2025-06/dev/period_swap",
+      "text": "Annual CPI inflation accelerated to 2.68% in May, from 2.38% the month before, while core CPI stood at 2.91%.",
+      "changed": [
+        "June",
+        "May"
+      ]
+    },
+    {
+      "id": "US-inflation-2025-06/heldout/period_swap",
+      "text": "May's CPI report showed headline inflation of 2.68% and core inflation of 2.91 percent, versus 2.38% and 2.77 percent in May.",
+      "changed": [
+        "June",
+        "May"
+      ]
+    },
+    {
+      "id": "US-inflation-2025-07/heldout/period_swap",
+      "text": "June's CPI report showed headline inflation of 2.74 percent and core inflation of 3.05%, versus 2.68% and 2.91% in June.",
+      "changed": [
+        "July",
+        "June"
+      ]
+    },
+    {
+      "id": "US-inflation-2025-08/heldout/period_swap",
+      "text": "Price pressures built in July 2025: the CPI rose 2.94% from a year earlier, against 2.74% a month before, and the core measure was 3.11%.",
+      "changed": [
+        "August 2025",
+        "July 2025"
+      ]
+    },
+    {
+      "id": "US-inflation-2025-09/heldout/period_swap",
+      "text": "August's CPI report showed headline inflation of 3.02% and core inflation of 3.02%, versus 2.94 percent and 3.11% in August.",
+      "changed": [
+        "September",
+        "August"
+      ]
+    },
+    {
+      "id": "US-inflation-2025-09/heldout/metric",
+      "text": "September's CPI report showed headline inflation of 3.02% and headline inflation of 3.02%, versus 2.94 percent and 3.11% in August.",
+      "changed": [
+        "core inflation",
+        "headline inflation"
+      ]
+    },
+    {
+      "id": "US-inflation-2025-12/dev/metric",
+      "text": "US consumer prices rose 2.65 percent in the year to December 2025, down from 2.70 percent in November. Headline inflation was little changed at 2.65 percent.",
+      "changed": [
+        "Core inflation",
+        "Headline inflation"
+      ]
+    },
+    {
+      "id": "US-inflation-2025-12/heldout/period_swap",
+      "text": "November's CPI report showed headline inflation of 2.65% and core inflation of 2.65%, versus 2.70% and 2.60 percent in November.",
+      "changed": [
+        "December",
+        "November"
+      ]
+    },
+    {
+      "id": "US-inflation-2025-12/heldout/metric",
+      "text": "December's CPI report showed headline inflation of 2.65% and headline inflation of 2.65%, versus 2.70% and 2.60 percent in November.",
+      "changed": [
+        "core inflation",
+        "headline inflation"
+      ]
+    },
+    {
+      "id": "US-inflation-2026-01/heldout/period_swap",
+      "text": "December's CPI report showed headline inflation of 2.39% and core inflation of 2.51%, versus 2.65 percent and 2.65 percent in December.",
+      "changed": [
+        "January",
+        "December"
+      ]
+    },
+    {
+      "id": "US-inflation-2026-02/heldout/period_swap",
+      "text": "Price pressures built in January 2026: the CPI rose 2.43 percent from a year earlier, against 2.39 percent a month before, and the core measure was 2.47%.",
+      "changed": [
+        "February 2026",
+        "January 2026"
+      ]
+    },
+    {
+      "id": "US-inflation-2026-03/heldout/period_swap",
+      "text": "February's CPI report showed headline inflation of 3.29% and core inflation of 2.60%, versus 2.43% and 2.47 percent in February.",
+      "changed": [
+        "March",
+        "February"
+      ]
+    },
+    {
+      "id": "US-inflation-2026-04/heldout/period",
+      "text": "April's CPI report showed headline inflation of 3.78% and core inflation of 2.74%, versus 3.29% and 2.60 percent in May.",
+      "changed": [
+        "March.",
+        "May."
+      ]
+    },
+    {
+      "id": "US-inflation-2026-04/heldout/period_swap",
+      "text": "March's CPI report showed headline inflation of 3.78% and core inflation of 2.74%, versus 3.29% and 2.60 percent in March.",
+      "changed": [
+        "April",
+        "March"
+      ]
+    },
+    {
+      "id": "US-inflation-2026-06/dev/period_swap",
+      "text": "Annual CPI inflation slowed to 3.46 percent in May, from 4.17 percent the month before, while core CPI stood at 2.57 percent.",
+      "changed": [
+        "June",
+        "May"
+      ]
+    },
+    {
+      "id": "US-inflation-2026-06/heldout/period_swap",
+      "text": "May's CPI report showed headline inflation of 3.46% and core inflation of 2.57%, versus 4.17% and 2.82% in May.",
+      "changed": [
+        "June",
+        "May"
+      ]
+    },
+    {
+      "id": "US-inflation-2026-07/heldout/period_swap",
+      "text": "June's CPI report showed headline inflation of 3.30 percent and core inflation of 2.47 percent, versus 3.46 percent and 2.57% in June.",
+      "changed": [
+        "July",
+        "June"
+      ]
+    },
+    {
+      "id": "US-inflation-2026-08/heldout/period",
+      "text": "August's CPI report showed headline inflation of 3.35% and core inflation of 2.45 percent, versus 3.30% and 2.47 percent in May.",
+      "changed": [
+        "July.",
+        "May."
+      ]
+    },
+    {
+      "id": "US-inflation-2026-08/heldout/period_swap",
+      "text": "July's CPI report showed headline inflation of 3.35% and core inflation of 2.45 percent, versus 3.30% and 2.47 percent in July.",
+      "changed": [
+        "August",
+        "July"
+      ]
+    },
+    {
+      "id": "US-inflation-2026-09/heldout/period_swap",
+      "text": "Price pressures built in August 2026: the CPI rose 3.72% from a year earlier, against 3.35 percent a month before, and the core measure was 2.57 percent.",
+      "changed": [
+        "September 2026",
+        "August 2026"
+      ]
+    },
+    {
+      "id": "US-labor-2023-04/heldout/period",
+      "text": "Payrolls grew by 241,000 in May, and the unemployment rate ticked down to 3.4%.",
+      "changed": [
+        "April",
+        "May"
+      ]
+    },
+    {
+      "id": "US-labor-2023-09/dev/period_swap",
+      "text": "The US unemployment rate was unchanged at 3.7% in August 2023, while nonfarm payrolls increased by 156,000.",
+      "changed": [
+        "September 2023",
+        "August 2023"
+      ]
+    },
+    {
+      "id": "US-labor-2024-06/heldout/period_swap",
+      "text": "Payrolls grew by 87k in May, and the unemployment rate ticked up to 4.1%.",
+      "changed": [
+        "June",
+        "May"
+      ]
+    },
+    {
+      "id": "US-labor-2024-11/heldout/period",
+      "text": "Payrolls grew by 134,000 in May, and the unemployment rate ticked up to 4.2%.",
+      "changed": [
+        "November",
+        "May"
+      ]
+    },
+    {
+      "id": "US-rates-2023-01/heldout/period_swap",
+      "text": "The curve flattened in December, with the 10-year minus 2-year spread moving to -0.68 percentage points from -0.67.",
+      "changed": [
+        "January",
+        "December"
+      ]
+    },
+    {
+      "id": "US-rates-2023-01/heldout/metric",
+      "text": "The curve flattened in January, with the 2-year minus 2-year spread moving to -0.68 percentage points from -0.67.",
+      "changed": [
+        "10-year",
+        "2-year"
+      ]
+    },
+    {
+      "id": "US-rates-2023-03/heldout/period_swap",
+      "text": "The curve steepened in February, with the 10-year minus 2-year spread moving to -0.64 percentage points from -0.78.",
+      "changed": [
+        "March",
+        "February"
+      ]
+    },
+    {
+      "id": "US-rates-2023-03/heldout/metric",
+      "text": "The curve steepened in March, with the 10-year minus 10-year spread moving to -0.64 percentage points from -0.78.",
+      "changed": [
+        "2-year",
+        "10-year"
+      ]
+    },
+    {
+      "id": "US-rates-2023-05/dev/metric",
+      "text": "With the policy rate at 5.06%, two-year yields increased 0.11 percentage points to 3.57 percent in May 2023.",
+      "changed": [
+        "ten-year",
+        "two-year"
+      ]
+    },
+    {
+      "id": "US-rates-2023-06/heldout/period_swap",
+      "text": "The curve flattened in May, with the 10-year minus 2-year spread moving to -0.89 percentage points from -0.56.",
+      "changed": [
+        "June",
+        "May"
+      ]
+    },
+    {
+      "id": "US-rates-2023-06/heldout/metric",
+      "text": "The curve flattened in June, with the 10-year minus 10-year spread moving to -0.89 percentage points from -0.56.",
+      "changed": [
+        "2-year",
+        "10-year"
+      ]
+    },
+    {
+      "id": "US-rates-2023-07/heldout/period_swap",
+      "text": "The curve flattened in June, with the 10-year minus 2-year spread moving to -0.93 percentage points from -0.89.",
+      "changed": [
+        "July",
+        "June"
+      ]
+    },
+    {
+      "id": "US-rates-2023-07/heldout/metric",
+      "text": "The curve flattened in July, with the 10-year minus 10-year spread moving to -0.93 percentage points from -0.89.",
+      "changed": [
+        "2-year",
+        "10-year"
+      ]
+    },
+    {
+      "id": "US-rates-2023-08/heldout/period_swap",
+      "text": "The curve steepened in July, with the 10-year minus 2-year spread moving to -0.73 percentage points from -0.93.",
+      "changed": [
+        "August",
+        "July"
+      ]
+    },
+    {
+      "id": "US-rates-2023-08/heldout/metric",
+      "text": "The curve steepened in August, with the 2-year minus 2-year spread moving to -0.73 percentage points from -0.93.",
+      "changed": [
+        "10-year",
+        "2-year"
+      ]
+    },
+    {
+      "id": "US-rates-2023-09/dev/period_swap",
+      "text": "The effective fed funds rate averaged 5.33% in August 2023. The 10-year Treasury yield rose 0.21 percentage points to 4.38%, while the 2-year yield increased to 5.02%.",
+      "changed": [
+        "September 2023",
+        "August 2023"
+      ]
+    },
+    {
+      "id": "US-rates-2023-10/dev/period_swap",
+      "text": "The effective fed funds rate averaged 5.33% in September 2023. The 10-year Treasury yield increased 42 basis points to 4.80%, while the 2-year yield increased to 5.07 percent.",
+      "changed": [
+        "October 2023",
+        "September 2023"
+      ]
+    },
+    {
+      "id": "US-rates-2023-11/dev/period_swap",
+      "text": "The effective fed funds rate averaged 5.33% in October 2023. The 10-year Treasury yield declined 0.30 percentage points to 4.50%, while the 2-year yield fell to 4.88 percent.",
+      "changed": [
+        "November 2023",
+        "October 2023"
+      ]
+    },
+    {
+      "id": "US-rates-2023-11/heldout/period_swap",
+      "text": "The curve flattened in October, with the 10-year minus 2-year spread moving to -0.38 percentage points from -0.27.",
+      "changed": [
+        "November",
+        "October"
+      ]
+    },
+    {
+      "id": "US-rates-2023-11/heldout/metric",
+      "text": "The curve flattened in November, with the 10-year minus 10-year spread moving to -0.38 percentage points from -0.27.",
+      "changed": [
+        "2-year",
+        "10-year"
+      ]
+    },
+    {
+      "id": "US-rates-2023-12/dev/period_swap",
+      "text": "The effective fed funds rate averaged 5.33 percent in November 2023. The 10-year Treasury yield fell 0.48 percentage points to 4.02 percent, while the 2-year yield dropped to 4.46%.",
+      "changed": [
+        "December 2023",
+        "November 2023"
+      ]
+    },
+    {
+      "id": "US-rates-2023-12/heldout/period_swap",
+      "text": "The curve flattened in November, with the 10-year minus 2-year spread moving to -0.44 percentage points from -0.38.",
+      "changed": [
+        "December",
+        "November"
+      ]
+    },
+    {
+      "id": "US-rates-2023-12/heldout/metric",
+      "text": "The curve flattened in December, with the 2-year minus 2-year spread moving to -0.44 percentage points from -0.38.",
+      "changed": [
+        "10-year",
+        "2-year"
+      ]
+    },
+    {
+      "id": "US-rates-2024-01/dev/period_swap",
+      "text": "The effective fed funds rate averaged 5.33% in December 2023. The 10-year Treasury yield climbed 4 basis points to 4.06%, while the 2-year yield fell to 4.32%.",
+      "changed": [
+        "January 2024",
+        "December 2023"
+      ]
+    },
+    {
+      "id": "US-rates-2024-03/dev/period_swap",
+      "text": "The effective fed funds rate averaged 5.33% in February 2024. The 10-year Treasury yield was unchanged at 4.21%, while the 2-year yield climbed to 4.59%.",
+      "changed": [
+        "March 2024",
+        "February 2024"
+      ]
+    },
+    {
+      "id": "US-rates-2024-03/heldout/period_swap",
+      "text": "The curve flattened in February, with the 10-year minus 2-year spread moving to -0.38 percentage points from -0.33.",
+      "changed": [
+        "March",
+        "February"
+      ]
+    },
+    {
+      "id": "US-rates-2024-03/heldout/metric",
+      "text": "The curve flattened in March, with the 10-year minus 10-year spread moving to -0.38 percentage points from -0.33.",
+      "changed": [
+        "2-year",
+        "10-year"
+      ]
+    },
+    {
+      "id": "US-rates-2024-04/dev/period_swap",
+      "text": "The effective fed funds rate averaged 5.33% in March 2024. The 10-year Treasury yield increased 0.33 percentage points to 4.54 percent, while the 2-year yield increased to 4.87%.",
+      "changed": [
+        "April 2024",
+        "March 2024"
+      ]
+    },
+    {
+      "id": "US-rates-2024-06/dev/period_swap",
+      "text": "The effective fed funds rate averaged 5.33 percent in May 2024. The 10-year Treasury yield declined 0.17 percentage points to 4.31%, while the 2-year yield declined to 4.74%.",
+      "changed": [
+        "June 2024",
+        "May 2024"
+      ]
+    },
+    {
+      "id": "US-rates-2024-06/heldout/period_swap",
+      "text": "The curve flattened in May, with the 10-year minus 2-year spread moving to -0.43 percentage points from -0.38.",
+      "changed": [
+        "June",
+        "May"
+      ]
+    },
+    {
+      "id": "US-rates-2024-06/heldout/metric",
+      "text": "The curve flattened in June, with the 2-year minus 2-year spread moving to -0.43 percentage points from -0.38.",
+      "changed": [
+        "10-year",
+        "2-year"
+      ]
+    },
+    {
+      "id": "US-rates-2024-07/dev/period_swap",
+      "text": "The effective fed funds rate averaged 5.33% in June 2024. The 10-year Treasury yield declined 6 bp to 4.25%, while the 2-year yield fell to 4.50%.",
+      "changed": [
+        "July 2024",
+        "June 2024"
+      ]
+    },
+    {
+      "id": "US-rates-2024-08/heldout/period_swap",
+      "text": "The curve steepened in July, with the 10-year minus 2-year spread moving to -0.10 percentage points from -0.25.",
+      "changed": [
+        "August",
+        "July"
+      ]
+    },
+    {
+      "id": "US-rates-2024-08/heldout/metric",
+      "text": "The curve steepened in August, with the 2-year minus 2-year spread moving to -0.10 percentage points from -0.25.",
+      "changed": [
+        "10-year",
+        "2-year"
+      ]
+    },
+    {
+      "id": "US-rates-2024-10/heldout/period_swap",
+      "text": "The curve steepened in September, with the 10-year minus 2-year spread moving to 0.13 percentage points from 0.10.",
+      "changed": [
+        "October",
+        "September"
+      ]
+    },
+    {
+      "id": "US-rates-2024-10/heldout/metric",
+      "text": "The curve steepened in October, with the 2-year minus 2-year spread moving to 0.13 percentage points from 0.10.",
+      "changed": [
+        "10-year",
+        "2-year"
+      ]
+    },
+    {
+      "id": "US-rates-2025-02/heldout/period_swap",
+      "text": "The curve flattened in January, with the 10-year minus 2-year spread moving to 0.24 percentage points from 0.36.",
+      "changed": [
+        "February",
+        "January"
+      ]
+    },
+    {
+      "id": "US-rates-2025-02/heldout/metric",
+      "text": "The curve flattened in February, with the 10-year minus 10-year spread moving to 0.24 percentage points from 0.36.",
+      "changed": [
+        "2-year",
+        "10-year"
+      ]
+    },
+    {
+      "id": "US-rates-2025-03/dev/period_swap",
+      "text": "The effective fed funds rate averaged 4.33% in February 2025. The 10-year Treasury yield declined 17 basis points to 4.28%, while the 2-year yield fell to 3.97 percent.",
+      "changed": [
+        "March 2025",
+        "February 2025"
+      ]
+    },
+    {
+      "id": "US-rates-2025-04/dev/period_swap",
+      "text": "The effective fed funds rate averaged 4.33 percent in March 2025. The 10-year Treasury yield was unchanged at 4.28 percent, while the 2-year yield dropped to 3.78 percent.",
+      "changed": [
+        "April 2025",
+        "March 2025"
+      ]
+    },
+    {
+      "id": "US-rates-2025-05/dev/period_swap",
+      "text": "The effective fed funds rate averaged 4.33% in April 2025. The 10-year Treasury yield climbed 14 basis points to 4.42%, while the 2-year yield increased to 3.92 percent.",
+      "changed": [
+        "May 2025",
+        "April 2025"
+      ]
+    },
+    {
+      "id": "US-rates-2025-05/heldout/metric",
+      "text": "The curve flattened in May, with the 10-year minus 10-year spread moving to 0.50 percentage points from 0.50.",
+      "changed": [
+        "2-year",
+        "10-year"
+      ]
+    },
+    {
+      "id": "US-rates-2025-06/dev/period_swap",
+      "text": "The effective fed funds rate averaged 4.33 percent in May 2025. The 10-year Treasury yield fell 0.04 percentage points to 4.38%, while the 2-year yield fell to 3.89%.",
+      "changed": [
+        "June 2025",
+        "May 2025"
+      ]
+    },
+    {
+      "id": "US-rates-2025-06/heldout/period_swap",
+      "text": "The curve flattened in May, with the 10-year minus 2-year spread moving to 0.49 percentage points from 0.50.",
+      "changed": [
+        "June",
+        "May"
+      ]
+    },
+    {
+      "id": "US-rates-2025-06/heldout/metric",
+      "text": "The curve flattened in June, with the 2-year minus 2-year spread moving to 0.49 percentage points from 0.50.",
+      "changed": [
+        "10-year",
+        "2-year"
+      ]
+    },
+    {
+      "id": "US-rates-2025-07/dev/period_swap",
+      "text": "The effective fed funds rate averaged 4.33 percent in June 2025. The 10-year Treasury yield climbed 1 bp to 4.39 percent, while the 2-year yield declined to 3.88%.",
+      "changed": [
+        "July 2025",
+        "June 2025"
+      ]
+    },
+    {
+      "id": "US-rates-2025-08/dev/period_swap",
+      "text": "The effective fed funds rate averaged 4.33 percent in July 2025. The 10-year Treasury yield declined 13 basis points to 4.26 percent, while the 2-year yield declined to 3.70%.",
+      "changed": [
+        "August 2025",
+        "July 2025"
+      ]
+    },
+    {
+      "id": "US-rates-2025-08/heldout/period_swap",
+      "text": "The curve steepened in July, with the 10-year minus 2-year spread moving to 0.56 percentage points from 0.51.",
+      "changed": [
+        "August",
+        "July"
+      ]
+    },
+    {
+      "id": "US-rates-2025-08/heldout/metric",
+      "text": "The curve steepened in August, with the 2-year minus 2-year spread moving to 0.56 percentage points from 0.51.",
+      "changed": [
+        "10-year",
+        "2-year"
+      ]
+    },
+    {
+      "id": "US-rates-2025-11/dev/metric",
+      "text": "With the policy rate at 3.88 percent, two-year yields rose 0.03 percentage points to 4.09% in November 2025.",
+      "changed": [
+        "ten-year",
+        "two-year"
+      ]
+    },
+    {
+      "id": "US-rates-2025-12/heldout/period_swap",
+      "text": "The curve steepened in November, with the 10-year minus 2-year spread moving to 0.64 percentage points from 0.54.",
+      "changed": [
+        "December",
+        "November"
+      ]
+    },
+    {
+      "id": "US-rates-2025-12/heldout/metric",
+      "text": "The curve steepened in December, with the 10-year minus 10-year spread moving to 0.64 percentage points from 0.54.",
+      "changed": [
+        "2-year",
+        "10-year"
+      ]
+    },
+    {
+      "id": "US-rates-2026-02/dev/period_swap",
+      "text": "The effective fed funds rate averaged 3.64% in January 2026. The 10-year Treasury yield declined 0.08 percentage points to 4.13%, while the 2-year yield fell to 3.47%.",
+      "changed": [
+        "February 2026",
+        "January 2026"
+      ]
+    },
+    {
+      "id": "US-rates-2026-03/heldout/period_swap",
+      "text": "The curve flattened in February, with the 10-year minus 2-year spread moving to 0.54 percentage points from 0.66.",
+      "changed": [
+        "March",
+        "February"
+      ]
+    },
+    {
+      "id": "US-rates-2026-03/heldout/metric",
+      "text": "The curve flattened in March, with the 2-year minus 2-year spread moving to 0.54 percentage points from 0.66.",
+      "changed": [
+        "10-year",
+        "2-year"
+      ]
+    },
+    {
+      "id": "US-rates-2026-06/dev/period_swap",
+      "text": "The effective fed funds rate averaged 3.63% in May 2026. The 10-year Treasury yield declined 1 basis points to 4.47%, while the 2-year yield increased to 4.11%.",
+      "changed": [
+        "June 2026",
+        "May 2026"
+      ]
+    },
+    {
+      "id": "US-rates-2026-07/dev/period_swap",
+      "text": "The effective fed funds rate averaged 3.63 percent in June 2026. The 10-year Treasury yield rose 13 bp to 4.60%, while the 2-year yield rose to 4.22%.",
+      "changed": [
+        "July 2026",
+        "June 2026"
+      ]
+    },
+    {
+      "id": "US-rates-2026-07/heldout/period_swap",
+      "text": "The curve steepened in June, with the 10-year minus 2-year spread moving to 0.38 percentage points from 0.36.",
+      "changed": [
+        "July",
+        "June"
+      ]
+    },
+    {
+      "id": "US-rates-2026-07/heldout/metric",
+      "text": "The curve steepened in July, with the 10-year minus 10-year spread moving to 0.38 percentage points from 0.36.",
+      "changed": [
+        "2-year",
+        "10-year"
+      ]
+    },
+    {
+      "id": "US-rates-2026-08/heldout/period_swap",
+      "text": "The curve steepened in July, with the 10-year minus 2-year spread moving to 0.46 percentage points from 0.38.",
+      "changed": [
+        "August",
+        "July"
+      ]
+    },
+    {
+      "id": "US-rates-2026-08/heldout/metric",
+      "text": "The curve steepened in August, with the 2-year minus 2-year spread moving to 0.46 percentage points from 0.38.",
+      "changed": [
+        "10-year",
+        "2-year"
+      ]
+    },
+    {
+      "id": "US-oil-2024-06/dev/period_swap",
+      "text": "Oil prices dropped $0.25 to an average of $79.77 per barrel in May.",
+      "changed": [
+        "June.",
+        "May."
+      ]
+    },
+    {
+      "id": "US-oil-2025-06/dev/period_swap",
+      "text": "Oil prices increased $6.00 to an average of $68.17 per barrel in May.",
+      "changed": [
+        "June.",
+        "May."
+      ]
+    },
+    {
+      "id": "US-oil-2025-08/dev/period",
+      "text": "Oil prices declined $3.53 to an average of $64.86 per barrel in May.",
+      "changed": [
+        "August.",
+        "May."
+      ]
+    },
+    {
+      "id": "US-oil-2026-06/dev/period_swap",
+      "text": "Oil prices dropped $17.32 to an average of $84.81 per barrel in May.",
+      "changed": [
+        "June.",
+        "May."
+      ]
+    },
+    {
+      "id": "US-oil-2026-08/dev/period",
+      "text": "Oil prices rose $3.44 to an average of $83.90 per barrel in May.",
+      "changed": [
+        "August.",
+        "May."
+      ]
+    }
+  ]
+}

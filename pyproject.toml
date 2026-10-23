@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "finllm-qa"
+version = "0.1.0"
+description = "Fact-check LLM-written financial commentary against SEC and FRED data"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Pasquale Alessandro Denora" }]
+dependencies = ["pandas>=2.0", "requests>=2.28", "matplotlib>=3.7"]
+
+[project.optional-dependencies]
+llm = ["torch>=2.2", "transformers>=4.45", "accelerate>=0.30", "bitsandbytes>=0.43"]
+dev = ["pytest>=7"]
+
+[tool.setuptools]
+packages = ["finllm_qa"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
