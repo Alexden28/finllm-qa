@@ -127,6 +127,50 @@ point of the benchmark is the **zero false alarms on 534 correct texts** and a r
 (`tests/test_benchmark.py`) that keeps it that way. Both template styles were used while
 developing the checker, so neither is a true held-out set; the real test is LLM-written text.
 
+## Architecture
+
+```mermaid
+flowchart LR
+    SEC["SEC EDGAR<br/>XBRL company facts"] --> facts["facts.csv<br/>791 facts"]
+    FRED["FRED<br/>macro series"] --> facts
+    facts --> briefs["267 briefs<br/>this period vs prior"]
+    briefs --> llm["local LLMs<br/>Qwen, SmolLM2, Granite"]
+    briefs --> tpl["templates + one<br/>injected error"]
+    llm --> text["commentary"]
+    tpl --> text
+    text --> checker
+    briefs --> checker
+    subgraph checker ["checker (pure Python)"]
+        direction TB
+        num["numbers: linked to a metric<br/>and a period, then matched"]
+        dir["direction words vs<br/>the sign of the change"]
+        ent["companies, periods,<br/>unsupported claims"]
+    end
+    checker --> findings["findings: contradicted<br/>or unverifiable"]
+    findings --> out["LLM error rates,<br/>benchmark recall, hand audits"]
+```
+
+## Performance
+
+The checker is pure Python and needs no GPU, so it can run inline wherever commentary is produced.
+Measured with `python scripts/bench.py --llm`:
+
+Checker on AMD Ryzen 9 8940HX with Radeon Graphics (one core, pure Python):
+
+| Texts | Count | Median | 95th percentile | Throughput |
+| --- | --- | --- | --- | --- |
+| LLM commentaries | 1,068 | 2.0 ms | 4.2 ms | 464 texts/s |
+| benchmark documents | 3,739 | 1.1 ms | 2.2 ms | 843 texts/s |
+
+Generation on NVIDIA GeForce RTX 5070 Laptop GPU (bf16, greedy, batch 8, up to 180 new tokens, 32 briefs):
+
+| Model | Parameters | Seconds per commentary | Tokens/s, batch of 8 | Peak GPU memory | Load time |
+| --- | --- | --- | --- | --- | --- |
+| Qwen2.5-0.5B-Instruct | 494M | 0.73 | 150 | 1.0 GB | 2 s |
+| Qwen2.5-1.5B-Instruct | 1,544M | 1.00 | 129 | 3.0 GB | 3 s |
+| SmolLM2-1.7B-Instruct | 1,711M | 0.58 | 167 | 3.7 GB | 2 s |
+| granite-3.3-2b-instruct | 2,534M | 1.24 | 118 | 5.0 GB | 4 s |
+
 ## Run it
 
 ```bash
@@ -138,8 +182,17 @@ pytest -q                              # 36 tests, offline, on the committed fac
 # optional: local LLMs on your GPU (weights from Hugging Face, no API key, no cost)
 pip install -e ".[llm]"
 python -m finllm_qa generate --model Qwen/Qwen2.5-1.5B-Instruct
+python -m finllm_qa generate --model path/to/granite-3.3-2b-instruct --name ibm-granite/granite-3.3-2b-instruct
 python -m finllm_qa score-llm
 python -m finllm_qa build-facts         # refresh data/facts.csv from FRED and SEC EDGAR
+```
+
+Or in Docker (CI builds the image and runs the tests inside it on every push):
+
+```bash
+docker build -t finllm-qa .
+docker run --rm finllm-qa                                   # synthetic benchmark, offline
+docker run --rm finllm-qa check Apple-FY2025 "Revenue rose 16% to \$416.2 billion."
 ```
 
 ## Layout

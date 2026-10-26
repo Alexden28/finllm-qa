@@ -1,0 +1,54 @@
+{
+  "cpu": "AMD Ryzen 9 8940HX with Radeon Graphics",
+  "checker": {
+    "LLM commentaries": {
+      "docs": 1068,
+      "ms_p50": 1.980500000001939,
+      "ms_p95": 4.1595000000143045,
+      "docs_per_s": 463.9631602820576
+    },
+    "benchmark documents": {
+      "docs": 3739,
+      "ms_p50": 1.0707999999794993,
+      "ms_p95": 2.1724999999150896,
+      "docs_per_s": 843.3915120846777
+    }
+  },
+  "checker_total_s": 7.0393880999999965,
+  "peak_rss_mb": 104.96484375,
+  "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "generation": [
+    {
+      "model": "Qwen/Qwen2.5-0.5B-Instruct",
+      "load_s": 2.3345105999999305,
+      "s_per_commentary": 0.7342599531249974,
+      "tokens_per_s": 149.93838290028341,
+      "peak_gb": 1.013382911682129,
+      "params_m": 494.032768
+    },
+    {
+      "model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "load_s": 2.767099700000017,
+      "s_per_commentary": 0.9975676687499977,
+      "tokens_per_s": 129.0639262209953,
+      "peak_gb": 3.048610210418701,
+      "params_m": 1543.714304
+    },
+    {
+      "model": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+      "load_s": 2.023557100000062,
+      "s_per_commentary": 0.5763648749999959,
+      "tokens_per_s": 167.04912838416928,
+      "peak_gb": 3.739248275756836,
+      "params_m": 1711.376384
+    },
+    {
+      "model": "ibm-granite/granite-3.3-2b-instruct",
+      "load_s": 3.5903344000000743,
+      "s_per_commentary": 1.2432202437499953,
+      "tokens_per_s": 118.46754486216156,
+      "peak_gb": 5.0218024253845215,
+      "params_m": 2533.53984
+    }
+  ]
+}
