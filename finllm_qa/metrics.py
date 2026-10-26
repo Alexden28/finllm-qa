@@ -136,9 +136,12 @@ DOWN = ["fell", "fall", "falls", "falling", "fallen", "declined", "decline", "de
         "decreased", "decrease", "decreases", "dropped", "drop", "slipped", "slid", "lower", "down",
         "shrank", "contracted", "contraction", "plunged", "edged down", "ticked down", "cut", "lost",
         "retreated", "slumped", "tumbled", "moved down", "eased", "easing", "dropping", "decreasing",
-        "sliding", "slipping", "shrinking", "slumping", "plunging", "tumbling", "sank", "sinking"]
-TREND_UP = ["accelerated", "accelerating", "acceleration", "picked up", "quickened", "strengthened"]
-TREND_DOWN = ["slowed", "slowing", "slowdown", "decelerated", "deceleration", "moderated", "cooled", "softened"]
+        "sliding", "slipping", "shrinking", "slumping", "plunging", "tumbling", "sank", "sinking",
+        "dipped", "dipping", "plummeted", "plummeting"]
+TREND_UP = ["accelerated", "accelerating", "acceleration", "picked up", "quickened", "strengthened",
+            "uptick", "upticks"]  # nouns: always a change on the prior reading
+TREND_DOWN = ["slowed", "slowing", "slowdown", "decelerated", "deceleration", "moderated", "cooled", "softened",
+              "slowed down", "slowing down", "cooled down", "cooling down", "dip", "dips", "downtick"]
 FLAT = ["unchanged", "flat", "steady", "stable", "held at", "held steady"]
 
 DIRECTION_WORDS = (

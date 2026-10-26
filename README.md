@@ -10,52 +10,63 @@ for 15 large US companies) and **FRED** (CPI, core CPI, unemployment, payrolls, 
 Treasury yields, WTI crude, GDP), grouped into 267 "briefs" such as *Apple, fiscal 2025 vs 2024*
 or *US inflation, September vs August 2026*.
 
-## Results: three small LLMs, 801 commentaries
+## Results: four small LLMs, 1,068 commentaries
 
-Three open-weight models, run locally on an 8 GB laptop GPU with greedy decoding, each wrote a
+Four open-weight models, run locally on an 8 GB laptop GPU with greedy decoding, each wrote a
 commentary for every brief. The prompt says to use **only** the facts given and to add no numbers,
-dates or claims. **Three commentaries in four (76%) still contain a claim the data contradicts.**
+dates or claims. **Two commentaries in three (68%) still contain a claim the data contradicts**,
+and even the best model, IBM Granite 3.3 2B, gets one wrong in 45% of its commentaries.
 
 ![Share of commentaries with findings](reports/llm_findings.png)
 
 | Model | Commentaries | With a contradicted claim | Numbers traced to the brief | Most frequent errors |
 | --- | --- | --- | --- | --- |
-| Qwen2.5-1.5B-Instruct | 267 | 64.0% | 88.9% of 1,061 | direction (148), % change (59), metric (32) |
-| SmolLM2-1.7B-Instruct | 267 | 80.1% | 71.7% of 1,089 | direction (256), wrong number (155), % change (89) |
-| Qwen2.5-0.5B-Instruct | 267 | 84.6% | 65.3% of 776 | direction (270), wrong number (151), period (49) |
+| Granite-3.3-2B-Instruct | 267 | 45.3% | 86.9% of 1,172 | million vs billion (92), direction (83), % change (37) |
+| Qwen2.5-1.5B-Instruct | 267 | 59.9% | 88.9% of 1,061 | direction (136), % change (59), metric (32) |
+| SmolLM2-1.7B-Instruct | 267 | 80.1% | 71.8% of 1,089 | direction (254), wrong number (155), % change (89) |
+| Qwen2.5-0.5B-Instruct | 267 | 84.6% | 65.3% of 776 | direction (269), wrong number (151), period (49) |
 
 The errors are the kind a busy reader misses (verbatim):
 
 - *"The US effective fed funds rate has increased from 4.33% in August 2025 to 4.22% in September
   2025"* (SmolLM2): a fall written up as a rise, the most common error by far.
+- *"net income ... climbing to USD 76.03 million from USD 40.27 million"* (Granite, Alphabet fiscal
+  2021): billions written as millions, Granite's most frequent error.
+- *"the 10-year Treasury yield ... dipped slightly to 3.75% from 3.57%"* (Granite, June 2023): a rise
+  described as a fall, one of the misses the second audit found.
 - *"Revenue increased by 19% to USD 198,270 million"* (Qwen2.5-1.5B, Microsoft fiscal 2022): the
   rise was 18.0%.
-- *"declined by USD 2.03 per barrel, or 2.9%"* (SmolLM2, WTI November 2024): 2.9% divides by the
-  new price; the fall was 2.8%.
 - *"the 2.5% decline observed in June"* (SmolLM2): June is not in the brief; the figure is invented.
-- *"crude falling by approximately 3.5% to USD 80.46 per barrel"* (Qwen2.5-1.5B, August 2026): oil
-  rose 4.3%, from 80.46; the two months are swapped.
 
 ### How far to trust the checker
 
-Every finding and miss was judged by hand on **SmolLM2**, the one model not read during
-development (Qwen outputs were used to find parser bugs). The sample is 60 findings and 45
-unflagged commentaries, each with a one-line reason in [`reports/audit.csv`](reports/audit.csv).
+Two hand audits, each on a model not read during development (Qwen outputs were used to find
+parser bugs). Each sample is 60 findings and 45 unflagged commentaries, with a one-line reason per
+case in [`reports/audit.csv`](reports/audit.csv) and [`reports/audit_granite.csv`](reports/audit_granite.csv).
 
-| Audit, checker as of commit `ae88bc0` | Count |
-| --- | --- |
-| Findings that are real errors | 49 of 60 |
-| Findings that are claims absent from the brief (the instruction was broken) | 4 of 60 |
-| False alarms | 7 of 60 (precision 88%) |
-| Unflagged commentaries that still contain an error | 13 of 45 |
+| | Audit 1: SmolLM2, checker `ae88bc0` | Audit 2: Granite 3.3 2B, checker `b76330e` |
+| --- | --- | --- |
+| Findings that are real errors | 49 of 60 | 50 of 60 |
+| Findings that are claims absent from the brief (the instruction was broken) | 4 of 60 | 3 of 60 |
+| False alarms | 7 of 60 (precision 88%) | 7 of 60 (precision 88%) |
+| Unflagged commentaries that still contain an error | 13 of 45 | 7 of 45 |
 
-The audit led to five fixes: binding a number to a period across a comma or "to", the clause
+Audit 1 led to five fixes: binding a number to a period across a comma or "to", the clause
 "which excludes food and energy prices", the noun "acceleration", adjectives such as "increased
-costs", and job gains described in percentage points. Re-run on the same 105 cases, 5 of the 7
-false alarms and 9 of the 13 misses are gone and no correct text is newly flagged. That re-check
-is optimistic, since the fixes were written from these cases; a fresh audit on another model is
-the honest next measurement. Misses that remain are mostly claims with no number at all ("the
-core rate showing a higher rate of increase", "a strengthening dollar").
+costs", and job gains described in percentage points. Audit 2 measured those fixes on fresh text:
+misses fell from 13 to 7 of 45, but precision stayed at 88%, because Granite phrases things
+differently. Its false alarms came from four new patterns: "a drop in the payroll change, from
+155,000 to 33,000" read as negative payrolls; "slowing down" read as "down"; "a slowdown in the
+labor market" read as a falling unemployment rate; and a year after "compared to" or "lower than"
+bound to the next number. Two missed errors used "dipped", which was not in the vocabulary.
+
+Those patterns are now fixed, with regression tests. On the audit-2 cases all 7 false alarms and
+2 of the 4 missed errors are gone; audit 1 and the benchmark are unchanged. Like the first
+re-check, this one is optimistic, since the fixes were written from these cases; the next audit, on
+another model, is the real measurement. The results table above uses the current checker, which
+has seen Granite's audit sample. Misses that remain are mostly claims with no number at all ("a
+more pronounced increase" for core CPI, EPS "a significant improvement" while it halved,
+"continues to recover from the pandemic").
 
 ## What it checks
 
@@ -122,7 +133,7 @@ developing the checker, so neither is a true held-out set; the real test is LLM-
 pip install -e ".[dev]"
 python -m finllm_qa check Apple-FY2025 "Apple's revenue rose 16% to \$416.2 billion in fiscal 2025."
 python -m finllm_qa benchmark          # synthetic benchmark -> reports/
-pytest -q                              # 35 tests, offline, on the committed fact table
+pytest -q                              # 36 tests, offline, on the committed fact table
 
 # optional: local LLMs on your GPU (weights from Hugging Face, no API key, no cost)
 pip install -e ".[llm]"

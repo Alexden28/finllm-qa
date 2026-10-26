@@ -50,7 +50,8 @@ UNSUPPORTED_RE = re.compile(
 PRIOR_REF_RE = re.compile(
     r"(?<![\w-])(from|versus|vs\.?|compared (?:with|to)|against|a year (?:earlier|ago|before)|"
     r"(?:the )?(?:previous|prior|preceding) (?:year|month|quarter|fiscal year|reading|period)|last year|"
-    r"the year before|the month before|a month (?:earlier|ago|before)|the quarter before|a quarter earlier)"
+    r"the year before|the month before|a month (?:earlier|ago|before)|the quarter before|a quarter earlier|"
+    r"(?:higher|lower|greater|smaller|above|below|up|down|better|worse) than)"
     r"(?![\w-])",
     re.IGNORECASE,
 )
@@ -67,7 +68,18 @@ _DIR_FOLLOWERS = {
     "an", "its", "their", "this", "last", "year", "month", "quarter", "year-over-year", "year-on-year",
     "overall", "somewhat", "even", "also", "between", "through", "below", "above", "toward", "towards",
 }
-_RANGE_START_RE = re.compile(r"(?:since|from|between|through|until|over)\s+(?:the\s+)?$", re.IGNORECASE)
+_RANGE_START_RE = re.compile(r"(?:since|from|between|through|until|over|compared (?:to|with)|versus|vs\.?|"
+                             r"against|than)\s+(?:the\s+)?$", re.IGNORECASE)
+# "a drop in the payroll change, from +155,000 to +33,000": the verb compares two readings
+_FROM_NUMBER_RE = re.compile(r"(?:(?!\b(?:while|and|but|whereas)\b)[^.;:\d]){0,60}?\bfrom\s+(?:USD\s*|US\$|\$)?[+-]?\d",
+                             re.IGNORECASE)
+_MODIFIERS_RE = re.compile(r"(?:[A-Za-z][\w'-]*\s+){0,2}")
+_PERIOD_WORD_RE = re.compile(
+    r"jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|june?|july?|aug(?:ust)?|sept?(?:ember)?|oct(?:ober)?|"
+    r"nov(?:ember)?|dec(?:ember)?|fiscal|fy\d*|q[1-4]|first|second|third|fourth|latest|recent|previous|prior|"
+    r"same|most|past|current",
+    re.IGNORECASE,
+)
 _SENT_RE = re.compile(r"(?<=[.!?])\s+(?=[A-Z\"'(“])")
 
 
@@ -156,7 +168,7 @@ def _bound_period(num: Mention, periods, numbers, sent, brief: Brief, text: str 
 
 
 def _starts_range(text: str, p) -> bool:
-    return bool(_RANGE_START_RE.search(text[max(0, p.start - 14):p.start]))
+    return bool(_RANGE_START_RE.search(text[max(0, p.start - 20):p.start]))
 
 
 def _resolve_period(brief: Brief, ph) -> str | None:
@@ -357,8 +369,15 @@ class Checker:
             else:
                 hit = _link(d.start, aliases, sent, max_after=30)
                 obj = re.match(r"\s+(?:in|of)\s+(?:the\s+)?", text[d.end:])
-                if obj:  # "an increase in revenue"
-                    hit = next((h for h in aliases if h.start == d.end + obj.end()), hit)
+                if obj:  # "an increase in revenue", "a drop in the monthly nonfarm payroll change"
+                    at = d.end + obj.end()
+                    named = [h for h in aliases if h.start >= at and _MODIFIERS_RE.fullmatch(text[at:h.start])]
+                    word = re.match(r"[A-Za-z][\w-]*", text[at:])
+                    if named:
+                        hit = min(named, key=lambda h: h.start)
+                    elif word and word.group(0).lower() not in _DIR_FOLLOWERS \
+                            and not _PERIOD_WORD_RE.fullmatch(word.group(0)):
+                        continue  # "a slowdown in the labor market": not a metric the brief covers
                 if hit is not None and not hit.alias.strong:
                     # "core CPI, which excludes food and energy prices, rose": prefer the
                     # specific metric named earlier in the sentence over a generic word
@@ -373,8 +392,8 @@ class Checker:
             # "the CPI rose 3.7% from a year earlier": the verb describes the level it is
             # directly followed by, not the change versus the prior period.
             nxt = next((n for n in numbers if n.start >= d.end and text[d.end:n.start] in (" ", " by ")), None)
-            if re.match(r"\s+(?:from|than)\b", text[d.end:]):
-                basis = "change"  # "down from 6.3%", "higher than in August"
+            if re.match(r"\s+(?:from|than)\b", text[d.end:]) or _FROM_NUMBER_RE.match(text, d.end):
+                basis = "change"  # "down from 6.3%", "higher than in August", "a drop in X, from 155,000"
             elif not d.trend and d.sign != 0 and nxt is not None:
                 own = [c for c in brief.candidates() if c.metric == metric.key and _compatible(nxt, c)]
                 if any(matches(nxt, c.value) for c in own if c.what == "level") and \

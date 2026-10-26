@@ -28,6 +28,7 @@ def main(argv: list[str] | None = None) -> None:
     g.add_argument("--model", required=True)
     g.add_argument("--batch-size", type=int, default=16)
     g.add_argument("--4bit", dest="four_bit", action="store_true", help="load the model 4-bit quantized")
+    g.add_argument("--name", help="Hugging Face id to record when --model is a local folder")
     sub.add_parser("score-llm", help="check every reports/llm/*.jsonl file")
     c = sub.add_parser("check", help="check one text against one brief")
     c.add_argument("brief_id")
@@ -52,9 +53,10 @@ def main(argv: list[str] | None = None) -> None:
         benchmark_report(result, REPORTS)
     elif args.cmd == "generate":
         from .llm import generate
-        name = args.model.split("/")[-1]
+        label = args.name or args.model
+        name = label.replace("\\", "/").rstrip("/").split("/")[-1]
         generate(briefs, args.model, REPORTS / "llm" / f"{name}.jsonl", batch_size=args.batch_size,
-                 four_bit=args.four_bit)
+                 four_bit=args.four_bit, label=label)
     elif args.cmd == "score-llm":
         from .report import llm_report
         llm_report(sorted((REPORTS / "llm").glob("*.jsonl")), by_id, Checker(store), REPORTS)

@@ -109,3 +109,26 @@ def test_audit_regressions(check):
     assert "metric" in errors(check(text, unemp))
     # "increased" when nothing moved
     assert errors(check("Unemployment increased to 3.9% in May 2024.", LABOR)) == ["direction"]
+
+
+def test_second_audit_regressions(check):
+    oct24 = Brief("US-labor-2024-10", "labor", "US economy", "2024-10", "2024-09", {
+        "unemployment": (4.1, 4.1), "payrolls": (33_000, 155_000)})
+    # "a drop in the payroll change, from A to B" compares two readings
+    text = ("There was a significant drop in the monthly nonfarm payroll change, "
+            "from +155,000 jobs in September to +33,000 jobs in October.")
+    assert check(text, oct24).findings == []
+    # "slowing down" is one trend phrase, not "down" said of the level
+    assert check("Nonfarm payrolls added 33,000 jobs, with job growth slowing down.", oct24).findings == []
+    # a slowdown in the labor market says nothing about which way the unemployment rate moved
+    feb26 = Brief("US-labor-2026-02", "labor", "US economy", "2026-02", "2026-01", {
+        "unemployment": (4.4, 4.3), "payrolls": (-156_000, 160_000)})
+    text = "The unemployment rate rose to 4.40% from 4.30%, signaling a potential slowdown in the labor market."
+    assert check(text, feb26).findings == []
+    # a period after "compared to" or "lower than" belongs to the comparison, not to the next number
+    fy24 = Brief("Apple-FY2024", "company", "Apple", "FY2024", "FY2023", {
+        "revenue": (60_922e6, 26_974e6), "eps": (2.46, 2.47)})
+    assert check("Revenue rose 126% compared to fiscal 2023, reaching USD 60,922 million.", fy24).findings == []
+    assert check("Diluted EPS was USD 2.46, slightly lower than the USD 2.47 in fiscal 2023.", fy24).findings == []
+    # "dipped" is a direction word
+    assert errors(check("The 10-year Treasury yield dipped slightly to 4.99% from 4.68%.", RATES)) == ["direction"]

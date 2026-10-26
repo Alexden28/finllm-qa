@@ -24,7 +24,9 @@ def prompt_for(b: Brief) -> str:
 
 
 def generate(briefs: list[Brief], model_id: str, out_path: Path, batch_size: int = 16,
-             max_new_tokens: int = 180, four_bit: bool = False) -> list[dict]:
+             max_new_tokens: int = 180, four_bit: bool = False, label: str | None = None) -> list[dict]:
+    """`model_id` is a Hugging Face id or a local folder; `label` names the model in the output."""
+    label = label or model_id
     import torch
     from transformers import AutoModelForCausalLM, AutoTokenizer
 
@@ -51,12 +53,12 @@ def generate(briefs: list[Brief], model_id: str, out_path: Path, batch_size: int
             out = model.generate(**enc, max_new_tokens=max_new_tokens, do_sample=False,
                                  pad_token_id=tok.pad_token_id)
         for b, seq in zip(chunk, out[:, enc["input_ids"].shape[1]:]):
-            rows.append({"brief_id": b.id, "model": model_id + (" (4-bit)" if four_bit else ""), "text": tok.decode(seq, skip_special_tokens=True).strip()})
+            rows.append({"brief_id": b.id, "model": label + (" (4-bit)" if four_bit else ""), "text": tok.decode(seq, skip_special_tokens=True).strip()})
     out_path.parent.mkdir(parents=True, exist_ok=True)
     with out_path.open("w", encoding="utf-8") as f:
         for r in rows:
             f.write(json.dumps(r, ensure_ascii=False) + "\n")
-    print(f"{model_id}: {len(rows)} commentaries in {time.time() - t0:.0f}s -> {out_path}")
+    print(f"{label}: {len(rows)} commentaries in {time.time() - t0:.0f}s -> {out_path}")
     return rows
 
 
